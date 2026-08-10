@@ -1,0 +1,9 @@
+{
+  "name": "TL Build Lab — Synergy Lab",
+  "short_name": "TL Build Lab",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071015",
+  "theme_color": "#09141a",
+  "lang": "de"
+}
