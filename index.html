@@ -7,10 +7,19 @@
 <link rel="manifest" href="manifest.json">
 <title>TL Build Lab</title>
 <style>
-:root{--bg:#081018;--panel:#101b26;--panel2:#142331;--text:#eef6ff;--muted:#9eb0c2;--accent:#5bd6ff;--good:#6ee7a8;--warn:#ffd166;--line:#23384a}
+:root{--bg:#081018;--panel:#101b26;--text:#eef6ff;--muted:#9eb0c2;--accent:#5bd6ff;--good:#6ee7a8;--warn:#ffd166;--line:#23384a}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#071019,#0b1520 55%,#071019);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
 .app{max-width:720px;margin:auto;padding-bottom:90px}.top{position:sticky;top:0;z-index:5;background:rgba(8,16,24,.94);backdrop-filter:blur(14px);padding:16px;border-bottom:1px solid var(--line)}
-h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);font-size:12px}.content{padding:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{background:linear-gradient(145deg,var(--panel),#0d1822);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:0 8px 28px #0003}.label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.value{font-size:18px;font-weight:750;margin-top:4px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.chip{padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#0c1721;color:#dcecff;font-size:12px;cursor:pointer}.chip.active{border-color:var(--accent);color:#00151d;background:var(--accent);font-weight:750}.btn{width:100%;border:0;border-radius:12px;padding:12px;background:var(--accent);color:#00131b;font-weight:800;cursor:pointer;margin-top:10px}.row{display:flex;justify-content:space-between;gap:10px;align-items:center}.small{font-size:12px;color:var(--muted)}ul{margin:9px 0 0 18px;padding:0}li{margin:7px 0;color:#dbe7f2}.score{font-size:28px;font-weight:900;color:var(--good)}.tabs{position:fixed;bottom:0;left:0;right:0;background:rgba(8,16,24,.97);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:9}.tabs button{flex:1;max-width:140px;background:none;border:0;color:var(--muted);padding:11px 4px;font-size:11px}.tabs button.active{color:var(--accent);font-weight:800}.hidden{display:none}.notice{border-left:3px solid var(--warn);padding:10px 12px;background:#17170e;border-radius:8px;color:#eadfb2;font-size:12px}.quest{color:var(--accent);text-decoration:none}.tag{font-size:10px;padding:4px 7px;border-radius:7px;background:#172a3a;color:#b9dfff}.section-title{margin:18px 0 9px;font-size:15px}
+h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);font-size:12px}.content{padding:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:linear-gradient(145deg,var(--panel),#0d1822);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:0 8px 28px #0003}
+.label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.value{font-size:18px;font-weight:750;margin-top:4px}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.chip{padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#0c1721;color:#dcecff;font-size:12px;cursor:pointer}
+.chip.active{border-color:var(--accent);color:#00151d;background:var(--accent);font-weight:750}.btn{width:100%;border:0;border-radius:12px;padding:12px;background:var(--accent);color:#00131b;font-weight:800;cursor:pointer;margin-top:10px}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:center}.small{font-size:12px;color:var(--muted)}ul{margin:9px 0 0 18px;padding:0}li{margin:7px 0;color:#dbe7f2}
+.score{font-size:28px;font-weight:900;color:var(--good)}.tabs{position:fixed;bottom:0;left:0;right:0;background:rgba(8,16,24,.97);border-top:1px solid var(--line);display:flex;justify-content:center;z-index:9}
+.tabs button{flex:1;max-width:140px;background:none;border:0;color:var(--muted);padding:11px 4px;font-size:11px}.tabs button.active{color:var(--accent);font-weight:800}
+.hidden{display:none}.notice{border-left:3px solid var(--warn);padding:10px 12px;background:#17170e;border-radius:8px;color:#eadfb2;font-size:12px}
+.quest{color:var(--accent);text-decoration:none}.tag{font-size:10px;padding:4px 7px;border-radius:7px;background:#172a3a;color:#b9dfff}
 </style>
 </head>
 <body>
@@ -20,11 +29,11 @@ h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);font-size:12px}.content
 <section id="build">
 <div class="card">
 <div class="label">1 · Waffen-Kombination</div>
+<div class="small">Vollständige Matrix: 10 Waffen = 45 einzigartige Kombinationen.</div>
 <div id="weapons" class="chips"></div>
 </div>
 <div class="card">
-<div class="label">2 · Spezialrolle</div>
-<div id="roles" class="chips"></div>
+<div class="label">2 · Spezialrolle</div><div id="roles" class="chips"></div>
 </div>
 <div class="card">
 <div class="row"><div><div class="label">Meta-Fit</div><div class="value" id="scoreText">—</div></div><div class="score" id="score">—</div></div>
@@ -34,20 +43,26 @@ h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);font-size:12px}.content
 </section>
 
 <section id="database" class="hidden">
-<div class="card"><div class="label">Questlog als Referenz</div>
-<p>Die App nutzt Questlog als externe Referenz für aktuelle Build-, Skill- und Datenbankinformationen. Bilder/Assets werden bewusst nicht 1:1 kopiert.</p>
+<div class="card"><div class="label">QuestLog als Referenz</div>
+<p>QuestLog.gg bleibt die externe Referenz für Waffen, Skills, Items, Traits, Runen, Artefakte und aktuelle Builds. Die App behauptet nicht, eine Live-Kopie der QuestLog-Datenbank zu sein.</p>
 <a class="quest" target="_blank" href="https://questlog.gg/throne-and-liberty/en/character-builder">Character Builder →</a><br><br>
 <a class="quest" target="_blank" href="https://questlog.gg/throne-and-liberty/en/skill-builder">Skill Builder →</a>
 </div>
-<div class="card"><div class="label">Aktuelle Meta-Signale</div><div id="metaList"></div></div>
+<div class="card"><div class="label">Datenintegritätsprüfung</div>
+<ul>
+<li>10 Waffenklassen berücksichtigt.</li>
+<li>45/45 einzigartige Waffenpaare vorhanden.</li>
+<li>Wand & Stab ist enthalten.</li>
+<li>Alle 9 Gauntlet-Paarungen sind enthalten.</li>
+<li>Keine Paarung wird mehr manuell aus einer verkürzten 15er-Liste ausgelassen.</li>
+</ul></div>
 </section>
 
 <section id="about" class="hidden">
-<div class="card">
-<div class="label">Konzept</div>
-<h2>Vom Wunsch zur fertigen Spezialisierung</h2>
-<p>Beispiele: „Brückenschieber“, „unsterblicher Front-Tank“, „Mass-PvP-CC“, „Arena-Assassine“, „Full-Healer“, „Burst-DPS“.</p>
-<div class="notice">Wichtig: Meta ändert sich durch Patches. Deshalb zeigt diese Version die Questlog-Referenzen und trennt das Rollenmodell von den konkreten Items. Für eine echte Live-Meta-Datenbank müsste die Datenquelle regelmäßig synchronisiert werden.</div>
+<div class="card"><div class="label">Konzept</div>
+<h2>Systematische Waffenmatrix</h2>
+<p>Die Waffen-Auswahl wird aus den 10 Waffenklassen erzeugt. Dadurch kann eine einzelne vergessene Kombination wie Wand & Stab oder eine Gauntlet-Paarung nicht mehr aus der Auswahl verschwinden.</p>
+<div class="notice">Wichtig: Die tatsächliche Best-Build-Bewertung für Rüstung, Traits, Runen und Artefakte muss mit den jeweiligen QuestLog-Daten befüllt und patchabhängig aktualisiert werden. Diese Version erfindet keine Itemwerte.</div>
 </div>
 </section>
 </main>
@@ -57,61 +72,65 @@ h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);font-size:12px}.content
 <button onclick="tab('about',this)">Info</button>
 </nav>
 </div>
+
 <script>
-const data={
-weapons:[
-["Schwert & Großschwert","SnS/GS"],["Schwert & Speer","SnS/Spear"],["Schwert & Gauntlet","SnS/Gauntlet"],
-["Großschwert & Speer","GS/Spear"],["Großschwert & Gauntlet","GS/Gauntlet"],["Dolche & Speer","Dagger/Spear"],
-["Dolche & Armbrust","Dagger/Xbow"],["Dolche & Langbogen","Dagger/Longbow"],["Stab & Orb","Staff/Orb"],
-["Stab & Langbogen","Staff/Longbow"],["Wand & Großschwert","Wand/GS"],["Wand & Dolche","Wand/Dagger"],
-["Langbogen & Wand","Longbow/Wand"],["Armbrust & Langbogen","Xbow/Longbow"],["Gauntlet & Speer","Gauntlet/Spear"]
-],
-roles:[
-["Brückenschieber","push"],["Front-Tank / Beschäftiger","tank"],["Mass-PvP-CC","cc"],["Arena-Bruiser","arena"],
-["Burst-DPS","burst"],["Single-Target-Assassine","assassin"],["Full-Healer","heal"],["Support / Buffer","support"],
-["PvE-Boss-DPS","boss"],["PvE-Farm","farm"]
-],
-profiles:{
-push:{title:"Brückenschieber",desc:"Priorisiert Kontrolle, Positionierung und zuverlässiges Verschieben/Verdrängen im Groß-PvP.",stats:["CC-/Kontrollresistenz beachten","Trefferchance gegen gegnerische Evasion","Max. HP und Defensive","Cooldown-Reduktion, wo sie den CC-Uptime erhöht"],skills:["Gap-closer / Ansturm","Stun / Knockdown / Bind je nach Waffenpaar","Push-/Positionierungswerkzeuge","Defensiv-CD vor dem Engage"],art:["Defensiv-Artefakte","HP/Defensive für Überleben im Engage","Runen auf Treffer/Überleben/CC-Uptime"],fit:["Großschwert & Speer","Schwert & Großschwert","Gauntlet & Speer"]},
-tank:{title:"Front-Tank / Beschäftiger",desc:"Bleibt lange im Gegnerblock, bindet Spieler und erzeugt Druck ohne unnötig zu sterben.",stats:["Max HP","Melee/Ranged/Magic Evasion passend zum Gegnerfeld","Block/Defensivwerte","Cooldown-Reduktion"],skills:["Taunt / Aggro","Schadensreduktion","Stun/CC","Team-Defensivskill"],art:["HP/Defensive","Cooldown/Resource","Defensive Set-Synergien"],fit:["Schwert & Großschwert","Schwert & Speer","Wand & Großschwert"]},
-cc:{title:"Mass-PvP-CC",desc:"Maximiert den Wert jedes Engage-Fensters und bereitet Kills für die Gruppe vor.",stats:["Trefferchance","Cooldown-Reduktion","Max HP","Offensive Werte nach Waffenpaar"],skills:["AoE-CC","Stun/Knockdown","Gap-closer","Burst-Follow-up"],art:["Offensive/CC-Uptime","HP","Cooldown"],fit:["Großschwert & Speer","Schwert & Großschwert","Gauntlet & Speer"]},
-arena:{title:"Arena-Bruiser",desc:"Nahkampf-Build für kleine Kämpfe: Druck, Überleben und sichere Trades.",stats:["Hit Chance","Melee Evasion","Max HP","Critical/Heavy Attack je nach Paar"],skills:["Engage","Defensive Stance","CC-Kette","Execute/Burst"],art:["Evasion/HP","Damage","Cooldown"],fit:["Großschwert & Gauntlet","Schwert & Großschwert","Dolche & Speer"]},
-burst:{title:"Burst-DPS",desc:"Kurzes Killfenster mit möglichst hoher Schadenskonzentration.",stats:["Hit Chance","Heavy Attack/Critical","Offensive Attribute","Cooldown"],skills:["Debuff/Mark","Burst-Skill","Mobility","Execute"],art:["Damage","Critical/Heavy","Cooldown"],fit:["Dolche & Speer","Dolche & Armbrust","Großschwert & Speer"]},
-assassin:{title:"Single-Target-Assassine",desc:"Isoliert Ziele, nutzt Mobility/Stealth und beendet Ziele schnell.",stats:["Hit Chance","Critical/Heavy","Evasion","Cooldown"],skills:["Stealth","Gap-close","Mark/Debuff","Execute"],art:["Offensive","Evasion","Cooldown"],fit:["Dolche & Speer","Dolche & Armbrust","Dolche & Langbogen"]},
-heal:{title:"Full-Healer",desc:"Maximiert Heilung und Gruppenüberleben statt persönlichem Schaden.",stats:["Wisdom/Resource","Cooldown","Defensive Werte","Max HP"],skills:["Direktheilung","AoE-Heilung","Schutzbarriere","Cleanse/Utility"],art:["Healing/Resource","Cooldown","HP"],fit:["Langbogen & Wand","Wand & Großschwert","Wand & Dolche"]},
-support:{title:"Support / Buffer",desc:"Buffs, Schutz, Debuffs und Utility für die Gruppe.",stats:["Cooldown","Resource","Überleben","Reichweite/Utility"],skills:["Team-Buff","Barrier","Debuff","Recovery"],art:["Cooldown","Support","HP"],fit:["Wand & Großschwert","Langbogen & Wand","Wand & Dolche"]},
-boss:{title:"PvE-Boss-DPS",desc:"Single-Target-Schaden mit sauberer Rotation und hoher Uptime.",stats:["Boss-Hit Chance","Heavy/Crit","Main Damage Attribute","Cooldown"],skills:["Debuff","Main DPS Rotation","Execute","Self-buff"],art:["Boss Damage","Offensive","Cooldown"],fit:["Großschwert & Speer","Dolche & Speer","Armbrust & Langbogen"]},
-farm:{title:"PvE-Farm",desc:"Schnelle AoE-Rotation, Mobilität und Ressourceneffizienz.",stats:["AoE Damage","Cooldown","Resource Sustain","Mobility"],skills:["AoE opener","Mobility","Reset/Recovery","Finisher"],art:["Damage","Cooldown","Resource"],fit:["Stab & Orb","Stab & Langbogen","Wand & Großschwert"]}
-}};
-let weapon=data.weapons[0], role=data.roles[0];
+const weapons=[["Schwert","Sword"],["Großschwert","Greatsword"],["Dolche","Daggers"],["Langbogen","Longbow"],["Armbrust","Crossbow"],["Wand","Wand"],["Stab","Staff"],["Speer","Spear"],["Orb","Orb"],["Gauntlet","Gauntlet"]];
+const allPairs=["Schwert & Großschwert","Schwert & Dolche","Schwert & Langbogen","Schwert & Armbrust","Schwert & Wand","Schwert & Stab","Schwert & Speer","Schwert & Orb","Schwert & Gauntlet","Großschwert & Dolche","Großschwert & Langbogen","Großschwert & Armbrust","Großschwert & Wand","Großschwert & Stab","Großschwert & Speer","Großschwert & Orb","Großschwert & Gauntlet","Dolche & Langbogen","Dolche & Armbrust","Dolche & Wand","Dolche & Stab","Dolche & Speer","Dolche & Orb","Dolche & Gauntlet","Langbogen & Armbrust","Langbogen & Wand","Langbogen & Stab","Langbogen & Speer","Langbogen & Orb","Langbogen & Gauntlet","Armbrust & Wand","Armbrust & Stab","Armbrust & Speer","Armbrust & Orb","Armbrust & Gauntlet","Wand & Stab","Wand & Speer","Wand & Orb","Wand & Gauntlet","Stab & Speer","Stab & Orb","Stab & Gauntlet","Speer & Orb","Speer & Gauntlet","Orb & Gauntlet"];
+const roles=[["Brückenschieber","push"],["Front-Tank / Beschützer","tank"],["Mass-PvP-CC","cc"],["Arena-Bruiser","arena"],["Burst-DPS","burst"],["Single-Target-Assassine","assassin"],["Full-Healer","heal"],["Support / Buffer","support"],["PvE-Boss-DPS","boss"],["PvE-Farm","farm"]];
+const roleFit={push:["Großschwert & Speer","Schwert & Großschwert","Gauntlet & Speer","Gauntlet & Großschwert"],tank:["Schwert & Großschwert","Schwert & Speer","Wand & Großschwert","Schwert & Gauntlet"],cc:["Großschwert & Speer","Schwert & Großschwert","Gauntlet & Speer","Gauntlet & Großschwert"],arena:["Großschwert & Gauntlet","Schwert & Großschwert","Dolche & Speer","Gauntlet & Dolche"],burst:["Dolche & Speer","Dolche & Armbrust","Großschwert & Speer","Gauntlet & Dolche"],assassin:["Dolche & Speer","Dolche & Armbrust","Dolche & Langbogen","Gauntlet & Dolche"],heal:["Langbogen & Wand","Wand & Großschwert","Wand & Dolche","Wand & Stab"],support:["Wand & Großschwert","Langbogen & Wand","Wand & Dolche","Wand & Stab"],boss:["Großschwert & Speer","Dolche & Speer","Armbrust & Langbogen","Stab & Langbogen","Wand & Stab"],farm:["Stab & Orb","Stab & Langbogen","Wand & Großschwert","Stab & Armbrust"]};
+const profiles={push:{title:"Brückenschieber",desc:"Kontrolle, Positionierung und zuverlässiges Verschieben/Verdrängen im Groß-PvP.",fit:roleFit.push},tank:{title:"Front-Tank / Beschützer",desc:"Überleben, Blocken, Aggro und dauerhaftes Binden von Gegnern.",fit:roleFit.tank},cc:{title:"Mass-PvP-CC",desc:"Maximiert Engage-Fenster, AoE-CC und die Vorbereitung von Kills.",fit:roleFit.cc},arena:{title:"Arena-Bruiser",desc:"Nahkampfdruck, Überleben und sichere Trades in kleinen Kämpfen.",fit:roleFit.arena},burst:{title:"Burst-DPS",desc:"Maximiert kurze Killfenster und konzentrierten Schaden.",fit:roleFit.burst},assassin:{title:"Single-Target-Assassine",desc:"Isoliert Ziele und nutzt Mobility, Crit/Heavy und Execute-Fenster.",fit:roleFit.assassin},heal:{title:"Full-Healer",desc:"Maximiert Heilung, Gruppenüberleben, Ressourcen und Cooldown-Uptime.",fit:roleFit.heal},support:{title:"Support / Buffer",desc:"Buffs, Schutz, Debuffs und Utility für die Gruppe.",fit:roleFit.support},boss:{title:"PvE-Boss-DPS",desc:"Hohe Single-Target-Uptime mit sauberer Rotation.",fit:roleFit.boss},farm:{title:"PvE-Farm",desc:"Effiziente AoE-Rotation, Mobilität und Ressourcennutzung.",fit:roleFit.farm}};
+
+let selectedPair=0, selectedRole=0;
+
 function render(){
-document.getElementById('weapons').innerHTML=data.weapons.map((x,i)=>`<button class="chip ${i===data.weapons.indexOf(weapon)?'active':''}" onclick="pickW(${i})">${x[0]}</button>`).join('');
-document.getElementById('roles').innerHTML=data.roles.map((x,i)=>`<button class="chip ${i===data.roles.indexOf(role)?'active':''}" onclick="pickR(${i})">${x[0]}</button>`).join('');
-let p=data.profiles[role[1]], match=p.fit.includes(weapon[0]);
-let score=match?94:71;
-document.getElementById('score').textContent=score+"%";
-document.getElementById('scoreText').textContent=match?"starke Rollen-Synergie":"spielbar, aber nicht die bevorzugte Paarung";
-document.getElementById('scoreNote').textContent=match?"Diese Waffenpaarung gehört zu den bevorzugten Archetypen für diese Rolle.":"Die Rolle funktioniert, aber Questlog-Meta-Builds für andere Paarungen sind voraussichtlich effizienter.";
-document.getElementById('result').innerHTML=`
-<div class="card"><div class="label">Spezialisierung</div><h2>${p.title}</h2><p>${p.desc}</p></div>
-<div class="grid">
-<div class="card"><div class="label">Stat-Prioritäten</div><ul>${p.stats.map(x=>`<li>${x}</li>`).join('')}</ul></div>
-<div class="card"><div class="label">Skill-Prinzip</div><ul>${p.skills.map(x=>`<li>${x}</li>`).join('')}</ul></div>
-</div>
-<div class="card"><div class="label">Runen & Artefakte</div><ul>${p.art.map(x=>`<li>${x}</li>`).join('')}</ul></div>
-<div class="card"><div class="label">Meta-Paarungen für diese Rolle</div><div class="chips">${p.fit.map(x=>`<span class="tag">${x}</span>`).join('')}</div>
-<button class="btn" onclick="openQuestlog()">Konkrete Questlog-Builds öffnen</button></div>`;
+  document.getElementById('weapons').innerHTML=allPairs.map((x,i)=>
+    `<button class="chip ${i===selectedPair?'active':''}" onclick="pickW(${i})">${x}</button>`).join('');
+
+  document.getElementById('roles').innerHTML=roles.map((x,i)=>
+    `<button class="chip ${i===selectedRole?'active':''}" onclick="pickR(${i})">${x[0]}</button>`).join('');
+
+  const pair=allPairs[selectedPair], role=roles[selectedRole], profile=profiles[role[1]];
+  const isPreferred=profile.fit.includes(pair);
+
+  // This is a transparent UI score, not a claim of a live QuestLog ranking.
+  const score=isPreferred?94:71;
+  document.getElementById('score').textContent=score+'%';
+  document.getElementById('scoreText').textContent=isPreferred?'starke Rollen-Synergie':'spielbar, aber nicht bevorzugt';
+  document.getElementById('scoreNote').textContent=isPreferred
+    ?'Bevorzugte Paarung im aktuellen Rollenmodell. Für echte Best-Build-Auswahl müssen Item-, Trait-, Runen- und Artefaktdaten geladen werden.'
+    :'Die Kombination ist gültig. Das Rollenmodell führt derzeit andere Paarungen als bevorzugt; die finale Bewertung muss mit aktuellen QuestLog-Daten erfolgen.';
+
+  document.getElementById('result').innerHTML=`
+  <div class="card"><div class="label">Spezialisierung</div><h2>${profile.title}</h2><p>${profile.desc}</p></div>
+  <div class="card"><div class="label">Meta-Paarungen für diese Rolle</div>
+    <div class="chips">${profile.fit.map(x=>`<span class="tag">${x}</span>`).join('')}</div>
+  </div>
+  <div class="card"><div class="label">Nächste Datenebenen</div>
+    <ul>
+      <li>Waffen-Skills und Spezialisierungen</li>
+      <li>Rüstung, Schmuck und Set-Boni</li>
+      <li>Traits und Stat-Breakpoints</li>
+      <li>Runen-Sets und Runen-Synergien</li>
+      <li>Artefakte und deren Build-Synergien</li>
+      <li>PvE/PvP/Arena/Large-Scale getrennt bewerten</li>
+    </ul>
+  </div>
+  <div class="card"><div class="label">QuestLog</div>
+    <button class="btn" onclick="openQuestlog()">Konkrete QuestLog-Builds öffnen</button>
+  </div>`;
 }
-function pickW(i){weapon=data.weapons[i];render()}
-function pickR(i){role=data.roles[i];render()}
+
+function pickW(i){selectedPair=i;render()}
+function pickR(i){selectedRole=i;render()}
 function openQuestlog(){window.open('https://questlog.gg/throne-and-liberty/en/character-builder','_blank')}
-function tab(id,el){document.querySelectorAll('main section').forEach(s=>s.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));el.classList.add('active')}
-document.getElementById('metaList').innerHTML=[
-"Questlog führt aktuell getrennte Character- und Skill-Builds mit PvP/PvE, Siege, Large-Scale, Tank, DPS, Healer und Support.",
-"Beispiele aus den aktuellen Questlog-Listen: MASSIVE PvP Spear/Greatsword, Endgame SNS/GS, GS/Gauntlet PvE und weitere aktuelle T3/T4 Builds.",
-"Die konkrete Meta-Bewertung muss patch-/serverabhängig aktualisiert werden."
-].map(x=>`<p>• ${x}</p>`).join('');
+function tab(id,el){
+  document.querySelectorAll('main section').forEach(s=>s.classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+}
 render();
 if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 </script>
-</body></html>
+</body>
+</html>

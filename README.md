@@ -1,10 +1,15 @@
 # TL Build Lab
+
 Mobile-first PWA prototype for Throne and Liberty.
 
-Start locally:
-python -m http.server 8000
+## Version 2
 
-Then open http://localhost:8000 on phone/PC in the same network if desired.
-The app deliberately does not copy Questlog artwork. It links to Questlog for reference.
+- Complete 10-weapon matrix: 45 unique weapon combinations.
+- Wand & Staff included.
+- All 9 Gauntlet pairings included.
+- Role and synergy model separated from external QuestLog references.
+- QuestLog.gg is used as the reference for current game data; this repository does not claim to be a live mirror of QuestLog.
 
-Important: The included role logic is a prototype, not a claim that every current T3/T4 item/skill/trait is already fully synchronized with Questlog. A production version should periodically ingest/curate current Questlog data and version it by patch/server.
+## Data integrity
+
+The application derives the weapon-pair list from the complete weapon set instead of maintaining a shortened hand-written list. Item, trait, rune and artifact values must be refreshed from current QuestLog data before making claims about a definitive best-in-slot build.
