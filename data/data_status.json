@@ -1,13 +1,14 @@
 {
-  "schemaVersion":"1.1.0",
+  "schemaVersion":"1.2.0",
   "targetPatch":"4.3.0",
   "lastReviewed":"2026-08-11",
-  "status":"active_catalog_expansion",
+  "status":"questlog_catalog_integrated",
   "sources":{
     "officialPatchNotes":{"priority":1,"status":"active","verificationRole":"patch_changes_and_official_mechanics"},
-    "tldb":{"priority":2,"status":"active","verificationRole":"current_catalog_for_items_skill_cores_runes_artifacts_sets"}
+    "questlog":{"priority":2,"status":"active","verificationRole":"current_catalog_for_items_skill_cores_runes_artifacts_sets"}
   },
   "datasets":{
+    "questlogCatalog":"data/questlog_catalog.json",
     "weapons":"data/weapons.json",
     "items":"data/items.json",
     "itemSets":"data/item_sets.json",
@@ -25,5 +26,8 @@
     "buildScoreMustExposeDataConfidence":true
   },
   "pipeline":["collect","normalize","deduplicate","patch-tag","cross-check","mark-confidence","publish-to-engine"],
+  "currentVerifiedQuestlogRecords":10,
+  "artifactFamilies":14,
+  "runeFamilies":4,
   "nextCriticalDatasets":["complete_item_stats_and_traits","all_skill_effects_and_specializations","rune_effect_values","artifact_stone_effects","verified_combat_formulas","masteries","scenario_enemy_stats"]
 }
