@@ -1,0 +1,27 @@
+{
+  "patchTarget":"4.3.0",
+  "authority":"secondary_catalog_with_explicit_verification_flags",
+  "armor":[
+    {"id":"ql_oblivions_wrath_barbute","name":"Oblivion's Wrath Barbute","slot":"helmet","grade":"Epic T2","verified":true},
+    {"id":"ql_kingslayer_banded_platemail","name":"Kingslayer's Banded Platemail","slot":"chest","grade":"Epic T2","verified":true},
+    {"id":"item_frost_lord_black_scale_gloves","name":"Frost Lord's Black Scale Gloves","slot":"gloves","grade":"Heroic","verified":true,"pvpHitChance":true},
+    {"id":"item_frost_lord_black_scale_boots","name":"Frost Lord's Black Scale Boots","slot":"boots","grade":"Heroic","verified":true,"pvpHitChance":true}
+  ],
+  "artifactFamilies":[
+    {"id":"deathless_one","name":"Deathless One","verified":false},
+    {"id":"chaos_harbinger","name":"Chaos Harbinger","verified":false},
+    {"id":"abyssal_beast","name":"Abyssal Beast","verified":false},
+    {"id":"wildlands_protector","name":"Wildlands Protector","verified":false},
+    {"id":"greedseeker","name":"Greedseeker","verified":false},
+    {"id":"ancestral_armor","name":"Ancestral Armor","verified":false},
+    {"id":"forsaken_zealot","name":"Forsaken Zealot","verified":false},
+    {"id":"dark_sovereign","name":"Dark Sovereign","verified":false},
+    {"id":"plains_ravager","name":"Plains Ravager","verified":false},
+    {"id":"flamespell_weaver","name":"Flamespell Weaver","verified":false},
+    {"id":"manawaste_sentinel","name":"Manawaste Sentinel","verified":false},
+    {"id":"wrathful_woodguard","name":"Wrathful Woodguard","verified":false},
+    {"id":"battlefield_champion","name":"Battlefield Champion","verified":false},
+    {"id":"venomshade_assassin","name":"Venomshade Assassin","verified":false}
+  ],
+  "policy":"Artifact family names are catalog candidates only. Stone-level effects are excluded from hard scoring until patch-verified."
+}
