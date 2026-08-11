@@ -1,0 +1,24 @@
+{
+  "version":"1.0.0",
+  "patchTarget":"4.3.0",
+  "status":"implementation_queue",
+  "requiredMechanics":[
+    {"id":"base_damage","status":"required"},
+    {"id":"attack_speed","status":"required"},
+    {"id":"hit_vs_evasion","status":"required"},
+    {"id":"critical_hit_vs_critical_resistance","status":"required"},
+    {"id":"heavy_attack_vs_heavy_attack_resistance","status":"required"},
+    {"id":"bonus_damage","status":"required"},
+    {"id":"skill_damage_boost","status":"required"},
+    {"id":"damage_reduction","status":"required"},
+    {"id":"endurance","status":"required"},
+    {"id":"cooldown_speed","status":"required"},
+    {"id":"buff_debuff_uptime","status":"required"},
+    {"id":"rune_synergy","status":"required"},
+    {"id":"set_effect_interactions","status":"required"},
+    {"id":"skill_specialization_interactions","status":"required"},
+    {"id":"mastery_effects","status":"required"},
+    {"id":"target_scenario","status":"required"}
+  ],
+  "implementationRule":"A mechanic remains unscored until its formula and patch-specific inputs are verified."
+}
