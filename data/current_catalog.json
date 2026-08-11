@@ -1,0 +1,24 @@
+{
+  "schemaVersion":"1.0.0",
+  "targetPatch":"4.3.0",
+  "lastReviewed":"2026-08-11",
+  "status":"catalog_expansion",
+  "sources":["official_update_4_3_0","tldb_items","tldb_perks","tldb_runes","tldb_item_sets"],
+  "categories":{
+    "weapons":["spear","daggers","sword","greatsword","staff","longbow","crossbows","wand","orb","gauntlet"],
+    "armorSlots":["headgear","cloak","chest","gloves","legs","shoes"],
+    "accessorySlots":["necklace","earrings","bracelet","ring","belt"],
+    "skillCores":["spear","daggers","sword","greatsword","staff","longbow","crossbows","wand","orb","gauntlet"],
+    "runes":["weapon","ring","necklace","bracelet","belt","earrings","armor","solarstone","lunarstone","talistone"],
+    "sets":true
+  },
+  "observedCurrentEntries":{
+    "greatswordSkillCores":["Silver Reaper's Gag Order","Morokai's Thunderbolt","Adentus's Fury","Junobote's Void","Enraged Giant Cordy's Spore Poison","Will Eruption","Judgment Wave","Blazing Tornado","Pakilo's Cruelty","Black Anvil Passion","Grayeye's Vitality","Giant Cordy's Spore Poison","Enraged Tevent's Despair Trap","Tevent's Despair Trap"],
+    "staffSkillCores":["Witch Worshipper's Temptation","Talus's Glacier","Aridus's Fury","Enraged Deluzhnoa's Hail","Swift Judgment","Lightning Spear","Icebound Gust","Daigon's Fury","Deluzhnoa's Hail","Grayeye's Thunderstorm","Black Anvil Passion","Enraged Queen Bellandir's Explosive Insect","Queen Bellandir's Explosive Insect"],
+    "spearSkillCores":["Witch Worshipper's Corrosive Curse","Junobote's Inferno","Enraged Deluzhnoa's Waves","Spiral Assault","Pakilo Naru's Barrier","Scared to Death","Crimson's Lantern","Deluzhnoa's Waves","Black Anvil Passion","Wind Blades","Enraged Queen Bellandir's Hunger","Queen Bellandir's Hunger"],
+    "globalSkillCores":["Silver Reaper's Gag Order","Morokai's Thunderbolt","Grand Aelon's Spirit","Witch Worshipper's Temptation","Talus's Glacier","Aridus's Fury","Silver Reaper's Sentence","Excavator's Barrier","Witch Worshipper's Corrosive Curse","Junobote's Inferno","Ancient Demonic Beast's Command","Talus's Transcendent Barrier","Deadly Grave","Shining Moon","Limuny's Last Shot","Deluzhnoa's Cold"],
+    "nobleRunes":["Noble Attack Rune: Weapon","Noble Defense Rune: Weapon","Noble Support Rune: Weapon","Noble Chaos Rune: Weapon","Noble Attack Rune: Ring","Noble Defense Rune: Ring","Noble Support Rune: Ring","Noble Chaos Rune: Ring","Noble Attack Rune: Necklace","Noble Defense Rune: Necklace","Noble Support Rune: Necklace","Noble Chaos Rune: Necklace","Noble Attack Rune: Bracelet","Noble Defense Rune: Bracelet","Noble Support Rune: Bracelet","Noble Chaos Rune: Bracelet","Noble Attack Rune: Belt","Noble Defense Rune: Belt","Noble Support Rune: Belt","Noble Chaos Rune: Belt","Noble Attack Rune: Earrings"],
+    "artifactFamilies":["Deathless One","Chaos Harbinger","Abyssal Beast","Wildlands Protector","Greedseeker","Ancestral Armor","Forsaken Zealot","Dark Sovereign","Plains Ravager","Flamespell Weaver","Manawaste Sentinel","Wrathful Woodguard","Battlefield Champion","Venomshade Assassin"]
+  },
+  "verification":"Names/catalog membership are secondary-reference observations. Numerical effects and exact patch applicability must be verified before entering the combat simulator as authoritative values."
+}
