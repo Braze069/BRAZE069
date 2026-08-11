@@ -1,0 +1,33 @@
+{
+  "patchTarget":"4.3.0",
+  "source":"tldb_runes",
+  "authority":"secondary",
+  "status":"catalog_only_until_effects_verified",
+  "runes":[
+    {"id":"r_noble_attack_weapon","name":"Noble Attack Rune: Weapon","slot":"weapon"},
+    {"id":"r_noble_defense_weapon","name":"Noble Defense Rune: Weapon","slot":"weapon"},
+    {"id":"r_noble_support_weapon","name":"Noble Support Rune: Weapon","slot":"weapon"},
+    {"id":"r_noble_chaos_weapon","name":"Noble Chaos Rune: Weapon","slot":"weapon"},
+    {"id":"r_noble_attack_ring","name":"Noble Attack Rune: Ring","slot":"ring"},
+    {"id":"r_noble_defense_ring","name":"Noble Defense Rune: Ring","slot":"ring"},
+    {"id":"r_noble_support_ring","name":"Noble Support Rune: Ring","slot":"ring"},
+    {"id":"r_noble_chaos_ring","name":"Noble Chaos Rune: Ring","slot":"ring"},
+    {"id":"r_noble_attack_necklace","name":"Noble Attack Rune: Necklace","slot":"necklace"},
+    {"id":"r_noble_defense_necklace","name":"Noble Defense Rune: Necklace","slot":"necklace"},
+    {"id":"r_noble_support_necklace","name":"Noble Support Rune: Necklace","slot":"necklace"},
+    {"id":"r_noble_chaos_necklace","name":"Noble Chaos Rune: Necklace","slot":"necklace"},
+    {"id":"r_noble_attack_bracelet","name":"Noble Attack Rune: Bracelet","slot":"bracelet"},
+    {"id":"r_noble_defense_bracelet","name":"Noble Defense Rune: Bracelet","slot":"bracelet"},
+    {"id":"r_noble_support_bracelet","name":"Noble Support Rune: Bracelet","slot":"bracelet"},
+    {"id":"r_noble_chaos_bracelet","name":"Noble Chaos Rune: Bracelet","slot":"bracelet"},
+    {"id":"r_noble_attack_belt","name":"Noble Attack Rune: Belt","slot":"belt"},
+    {"id":"r_noble_defense_belt","name":"Noble Defense Rune: Belt","slot":"belt"},
+    {"id":"r_noble_support_belt","name":"Noble Support Rune: Belt","slot":"belt"},
+    {"id":"r_noble_chaos_belt","name":"Noble Chaos Rune: Belt","slot":"belt"},
+    {"id":"r_noble_attack_earrings","name":"Noble Attack Rune: Earrings","slot":"earrings"}
+  ],
+  "artifactFamilies":[
+    "Deathless One","Chaos Harbinger","Abyssal Beast","Wildlands Protector","Greedseeker","Ancestral Armor","Forsaken Zealot","Dark Sovereign","Plains Ravager","Flamespell Weaver","Manawaste Sentinel","Wrathful Woodguard","Battlefield Champion","Venomshade Assassin"
+  ],
+  "verification":"Catalog names and slot categories are observed in the current TLDB index. Exact rune effects and artifact stone values must be imported and patch-checked before simulation."
+}
