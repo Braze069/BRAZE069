@@ -1,0 +1,33 @@
+{
+  "version":"1.0.0",
+  "patchTarget":"4.3.0",
+  "hardConstraints":[
+    "unknown_numeric_values_cannot_create_verified_score",
+    "incompatible_weapon_roles_are_pruned",
+    "missing_required_skill_or_item_data_marks_build_incomplete",
+    "duplicate_exclusive_set_effects_are_not_double_counted",
+    "rune_synergy_uses_socket_order_and_lowest_equipped_tier",
+    "mode_specific_rules_must_be_applied_before_ranking"
+  ],
+  "rankingStages":[
+    "validate",
+    "prune_impossible_or_low_synergy_candidates",
+    "calculate_final_stats",
+    "simulate_rotation_or_scenario",
+    "apply_target_defense_and_resistance",
+    "measure_output_and_survivability",
+    "calculate_data_confidence",
+    "rank"
+  ],
+  "scorePolicy":{
+    "no_popularity_bonus":true,
+    "no_community_meta_override":true,
+    "no_invented_values":true,
+    "confidence_visible_to_user":true,
+    "incomplete_data_cannot_claim_perfect_build":true
+  },
+  "scenarioDefaults":{
+    "pvp":{"targetLevel":60,"targetDefense":"scenario_input","durationSeconds":60},
+    "pve":{"targetLevel":60,"targetDefense":"scenario_input","durationSeconds":60}
+  }
+}
