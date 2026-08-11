@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "Maschinenlesbares Datenmodell für Throne and Liberty – Braze Power Builder.",
+  "entities": {
+    "items": "data/items.json",
+    "weapons": "data/weapons.json",
+    "skills": "data/skills.json",
+    "traits": "data/traits.json",
+    "runes": "data/runes.json",
+    "artifacts": "data/artifacts.json",
+    "formulas": "data/formulas.json",
+    "sources": "data/sources.json"
+  },
+  "item": {
+    "required": ["id", "name", "type", "patch", "sourceRefs", "verified"],
+    "fields": {
+      "id": "string",
+      "name": "string",
+      "type": "weapon|armor|accessory|cloak|rune|artifact|skill_core",
+      "weaponType": "string|null",
+      "grade": "string|null",
+      "itemLevel": "number|null",
+      "stats": "object",
+      "traits": "string[]",
+      "skillCores": "string[]",
+      "setId": "string|null",
+      "patch": "string",
+      "sourceRefs": "string[]",
+      "verified": "boolean",
+      "notes": "string|null"
+    }
+  },
+  "rule": {
+    "required": ["id", "patch", "sourceRefs", "verified"],
+    "fields": {
+      "id": "string",
+      "patch": "string",
+      "conditions": "object",
+      "effects": "object",
+      "sourceRefs": "string[]",
+      "verified": "boolean"
+    }
+  }
+}
