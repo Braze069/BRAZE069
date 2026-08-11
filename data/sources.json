@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "id": "official_update_4_3_0",
+      "kind": "official_patch_notes",
+      "publisher": "Amazon Games",
+      "url": "https://www.playthroneandliberty.com/de-de/news/articles/update-4-3-0",
+      "patch": "4.3.0",
+      "authority": "primary",
+      "verified": true
+    },
+    {
+      "id": "tldb_items",
+      "kind": "database",
+      "publisher": "TLDB",
+      "url": "https://de.tldb.info/db/items/page/1",
+      "patch": "current-index",
+      "authority": "secondary",
+      "verified": true
+    },
+    {
+      "id": "tldb_item_sets",
+      "kind": "database",
+      "publisher": "TLDB",
+      "url": "https://de.tldb.info/db/item-sets/page/1",
+      "patch": "current-index",
+      "authority": "secondary",
+      "verified": true
+    }
+  ]
+}
