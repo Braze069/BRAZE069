@@ -1,0 +1,22 @@
+{
+  "version":"1.0.0",
+  "patch":"4.3.0",
+  "formulas": {
+    "buildScore": {
+      "type":"weighted_pipeline",
+      "stages":["scenarioFit","roleFit","mechanicalSynergy","simulatedOutput","dataConfidence"]
+    },
+    "damagePipeline": {
+      "type":"ordered_pipeline",
+      "stages":["baseDamage","weaponModifiers","skillModifiers","criticalRules","heavyAttackRules","targetDefense","damageReduction"]
+    },
+    "dataConfidence": {
+      "primarySource":"official_patch_notes",
+      "secondarySource":"structured_database",
+      "unknownValues":"exclude_from_claims"
+    }
+  },
+  "sourceRefs":["official_update_4_3_0","tldb_items","tldb_item_sets"],
+  "verified":true,
+  "notes":"Dies ist bewusst ein Rechenrahmen, keine erfundene vollständige Spielgleichung. Konkrete Formeln werden erst nach verifizierter Ermittlung der jeweiligen Mechanik ergänzt."
+}
