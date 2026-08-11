@@ -1,0 +1,36 @@
+{
+  "patchTarget":"4.3.0",
+  "status":"catalog_seed_only",
+  "sourceRefs":["official_update_4_3_0","tldb_items_de","tldb_item_sets_de"],
+  "note":"Diese Einträge bestätigen die Existenz und deutsche Bezeichnung. Sie sind noch kein Beweis für vollständige Zahlenwerte.",
+  "weapons":[
+    {"id":"item_calanthia_device_of_finitude","name":"Calanthias Gerät der Endlichkeit","type":"weapon","weaponType":"greatsword","verifiedCatalog":true,"numericDataVerified":false},
+    {"id":"item_calanthia_aegis_of_supremacy","name":"Calanthias Aegis der Vorherrschaft","type":"weapon","weaponType":"sword","verifiedCatalog":true,"numericDataVerified":false},
+    {"id":"item_calanthia_cleavers_of_carnage","name":"Calanthias Hackbeile des Gemetzels","type":"weapon","weaponType":"daggers","verifiedCatalog":true,"numericDataVerified":false},
+    {"id":"item_calanthia_repeater_of_devastation","name":"Calanthias Repetierer der Verwüstung","type":"weapon","weaponType":"crossbow","verifiedCatalog":true,"numericDataVerified":false},
+    {"id":"item_calanthia_loom_of_entropy","name":"Calanthias Webstuhl der Entropie","type":"weapon","weaponType":"longbow","verifiedCatalog":true,"numericDataVerified":false}
+  ],
+  "sets":[
+    {"id":"set_steel_wall_guardian","name":"Stahlwallwächter-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_forgotten_monarch","name":"Vergessener-Monarch-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_demonic_beast_hunter","name":"Dämonenbestien-Jäger-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_blood_knights","name":"Blutritter-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_lightning_strike","name":"Blitzschlag-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_moonlit_night","name":"Mondhelle-Nacht-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_divine_apostle","name":"Göttlicher-Apostel-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_crimson_lotus","name":"Purpurner-Lotus-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_secret_order","name":"Geheimorden-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_noble_wanderer","name":"Edler-Wanderer-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_astromancer","name":"Astromant-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_wraith_knight","name":"Geisterritter-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_abyss_slayer","name":"Abgrundschlächter-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_wing_gale","name":"Flügelsturm-Set","verifiedCatalog":true,"numericDataVerified":true},
+    {"id":"set_world_tree","name":"Weltenbaum-Set","verifiedCatalog":true,"numericDataVerified":true}
+  ],
+  "runeCatalog":[
+    {"id":"noble_attack_rune_weapon","name":"Edle Angriffs-Rune: Waffe","verifiedCatalog":true,"numericDataVerified":false},
+    {"id":"noble_defense_rune_weapon","name":"Edle Verteidigungs-Rune: Waffe","verifiedCatalog":true,"numericDataVerified":false},
+    {"id":"noble_support_rune_weapon","name":"Edle Unterstützungs-Rune: Waffe","verifiedCatalog":true,"numericDataVerified":false},
+    {"id":"noble_chaos_rune_weapon","name":"Edle Chaos-Rune: Waffe","verifiedCatalog":true,"numericDataVerified":false}
+  ]
+}
