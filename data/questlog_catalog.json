@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0.0",
+  "game": "Throne and Liberty",
+  "targetPatch": "4.3.0",
+  "lastReviewed": "2026-08-11",
+  "source": {
+    "name": "Questlog.gg",
+    "database": "https://questlog.gg/throne-and-liberty/en/db/search",
+    "weapons": "https://questlog.gg/throne-and-liberty/en/db/items/weapons",
+    "armor": "https://questlog.gg/throne-and-liberty/en-nc/db/items/armor",
+    "builds": "https://questlog.gg/throne-and-liberty/en-nc/character-builder",
+    "verification": "Questlog is used as the secondary current-catalog source. Exact numerical combat values remain unknown unless individually verified."
+  },
+  "categories": {
+    "weapons": ["sword", "greatsword", "daggers", "longbow", "crossbow", "wand", "staff", "spear", "orb", "gauntlet"],
+    "armorSlots": ["helmet", "chest", "cloak", "gloves", "boots", "pants"],
+    "accessorySlots": ["necklace", "bracelet", "brooch", "ring", "belt", "earring"],
+    "artifacts": ["talistone1", "talistone2", "talistone3", "talistone4", "solarstone", "lunarstone"],
+    "runes": ["weapon", "ring", "necklace", "bracelet", "belt", "earrings", "armor", "solarstone", "lunarstone", "talistone"]
+  },
+  "observedItems": [
+    {"id":"ql_burning_purgatory_bloodlust_gs","name":"Burning Purgatory's Bloodlust Greatsword","category":"weapon","weaponType":"greatsword","grade":"Epic","verified":true,"source":"https://questlog.gg/throne-and-liberty/en/db/item/sword2h_aa_t2_boss_001","stats":{"strength":12,"maxHealth":1515,"cooldownSpeedPercent":8.5},"traits":["Max Health","Hit Chance","Stun Chance","Heavy Attack Chance","Critical Hit Chance","Buff Duration"],"skillCore":"Burning Purgatory's Vigor"},
+    {"id":"ql_lequirus_wicked_thorns","name":"Lequirus's Wicked Thorns","category":"weapon","weaponType":"daggers","grade":"Epic","verified":true,"source":"https://questlog.gg/throne-and-liberty/en/db/item/dagger_a_t2_nomal_002","stats":{"wisdom":4,"perception":3,"criticalHitChance":39},"traits":["Max Mana","Mana Regen","Hit Chance","Heavy Attack Chance","Critical Hit Chance","Humanoid Bonus Damage"],"skillCore":"Lequirus's Gale Blade"},
+    {"id":"ql_akman_bloodletting_crossbows","name":"Akman's Bloodletting Crossbows","category":"weapon","weaponType":"crossbow","grade":"Epic T2","verified":true,"source":"https://questlog.gg/throne-and-liberty/en/db/item/crossbow_aa_t5_boss_003","stats":{"dexterity":6},"traits":[],"skillCore":"Akman's Fragment"},
+    {"id":"ql_tevents_arc_wailing_death","name":"Tevent's Arc of Wailing Death","category":"weapon","weaponType":"longbow","grade":"Epic","verified":true,"source":"https://questlog.gg/throne-and-liberty/en/db/item/bow_aa_t1_nomal_002","stats":{"dexterity":10,"perception":11,"rangePercent":16},"traits":["Hit Chance","Heavy Attack Chance"],"skillCore":"Tevent's Bombardment"},
+    {"id":"ql_chaos_witch_comet_fists","name":"Chaos Witch's Comet Fists","category":"weapon","weaponType":"gauntlet","grade":"Heroic","verified":true,"source":"https://github.com/Braze069/BRAZE069/blob/main/data/items.json","stats":{"mainWeaponDamageMin":128,"mainWeaponDamageMax":335,"offHandDamageMin":128,"offHandDamageMax":335},"traits":[],"skillCore":null},
+    {"id":"ql_arc_lunar_radiance","name":"Arc of Lunar Radiance","category":"weapon","weaponType":"longbow","grade":"Epic T2","verified":true,"source":"https://questlog.gg/throne-and-liberty/en/db/items/weapons","stats":{},"traits":[]},
+    {"id":"ql_deluzhnoa_arc_frozen_death","name":"Deluzhnoa's Arc of Frozen Death","category":"weapon","weaponType":"longbow","grade":"Epic T2","verified":true,"source":"https://questlog.gg/throne-and-liberty/en/db/items/weapons","stats":{},"traits":[]},
+    {"id":"ql_oblivions_wrath_barbute","name":"Oblivion's Wrath Barbute","category":"armor","armorSlot":"helmet","grade":"Epic T2","verified":true,"source":"https://questlog.gg/throne-and-liberty/en-nc/db/items/armor","stats":{},"traits":[]},
+    {"id":"ql_kingslayer_banded_platemail","name":"Kingslayer's Banded Platemail","category":"armor","armorSlot":"chest","grade":"Epic T2","verified":true,"source":"https://questlog.gg/throne-and-liberty/en-nc/db/items/armor","stats":{},"traits":[]},
+    {"id":"ql_noble_birthright_brooch","name":"Noble Birthright Brooch","category":"accessory","accessorySlot":"brooch","verified":true,"source":"https://questlog.gg/throne-and-liberty/en/character-builder","stats":{},"traits":[]}
+  ],
+  "artifactFamilies": ["Deathless One","Chaos Harbinger","Abyssal Beast","Wildlands Protector","Greedseeker","Ancestral Armor","Forsaken Zealot","Dark Sovereign","Plains Ravager","Flamespell Weaver","Manawaste Sentinel","Wrathful Woodguard","Battlefield Champion","Venomshade Assassin"],
+  "runeFamilies": ["Noble Attack Rune","Noble Defense Rune","Noble Support Rune","Noble Chaos Rune"],
+  "skillCoreFamilies": {
+    "greatsword": ["Silver Reaper's Gag Order","Morokai's Thunderbolt","Adentus's Fury","Junobote's Void","Enraged Giant Cordy's Spore Poison","Will Eruption","Judgment Wave","Blazing Tornado","Pakilo's Cruelty","Black Anvil Passion","Grayeye's Vitality","Giant Cordy's Spore Poison","Enraged Tevent's Despair Trap","Tevent's Despair Trap"],
+    "staff": ["Witch Worshipper's Temptation","Talus's Glacier","Aridus's Fury","Enraged Deluzhnoa's Hail","Swift Judgment","Lightning Spear","Icebound Gust","Daigon's Fury","Deluzhnoa's Hail","Grayeye's Thunderstorm","Black Anvil Passion","Enraged Queen Bellandir's Explosive Insect","Queen Bellandir's Explosive Insect"],
+    "spear": ["Witch Worshipper's Corrosive Curse","Junobote's Inferno","Enraged Deluzhnoa's Waves","Spiral Assault","Pakilo Naru's Barrier","Scared to Death","Crimson's Lantern","Deluzhnoa's Waves","Black Anvil Passion","Wind Blades","Enraged Queen Bellandir's Hunger","Queen Bellandir's Hunger"]
+  },
+  "buildInputPolicy": {
+    "useOnlyVerifiedNumericStats": true,
+    "useCatalogNamesAsCandidates": true,
+    "unknownStats": "do_not_invent",
+    "confidenceRequired": true
+  }
+}
