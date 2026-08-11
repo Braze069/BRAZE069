@@ -1,0 +1,16 @@
+{
+  "patch": "4.3.0",
+  "sourceRefs": ["official_update_4_3_0", "tldb_items"],
+  "weapons": [
+    {"id":"weapon_greatsword","name":"Großschwert","type":"weapon","weaponType":"greatsword","verified":true},
+    {"id":"weapon_sword","name":"Schwert","type":"weapon","weaponType":"sword","verified":true},
+    {"id":"weapon_daggers","name":"Dolche","type":"weapon","weaponType":"daggers","verified":true},
+    {"id":"weapon_crossbow","name":"Armbrust","type":"weapon","weaponType":"crossbow","verified":true},
+    {"id":"weapon_longbow","name":"Langbogen","type":"weapon","weaponType":"longbow","verified":true},
+    {"id":"weapon_staff","name":"Stab","type":"weapon","weaponType":"staff","verified":true},
+    {"id":"weapon_wand","name":"Zauberstab","type":"weapon","weaponType":"wand","verified":true},
+    {"id":"weapon_spear","name":"Speer","type":"weapon","weaponType":"spear","verified":true},
+    {"id":"weapon_gauntlet","name":"Panzerhandschuhe","type":"weapon","weaponType":"gauntlet","verified":true},
+    {"id":"weapon_orb","name":"Orb","type":"weapon","weaponType":"orb","verified":true}
+  ]
+}
