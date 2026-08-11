@@ -1,0 +1,33 @@
+{
+  "patchTarget":"4.3.0",
+  "source":"tldb_perks",
+  "authority":"secondary",
+  "status":"catalog_only_until_effects_verified",
+  "skillCores":[
+    {"id":"sc_silver_reaper_gag_order","name":"Silver Reaper's Gag Order","weaponTypes":["greatsword"]},
+    {"id":"sc_morokai_thunderbolt","name":"Morokai's Thunderbolt","weaponTypes":["greatsword"]},
+    {"id":"sc_adentus_fury","name":"Adentus's Fury","weaponTypes":["greatsword"]},
+    {"id":"sc_junobote_void","name":"Junobote's Void","weaponTypes":["greatsword"]},
+    {"id":"sc_will_eruption","name":"Will Eruption","weaponTypes":["greatsword"]},
+    {"id":"sc_judgment_wave","name":"Judgment Wave","weaponTypes":["greatsword"]},
+    {"id":"sc_blazing_tornado","name":"Blazing Tornado","weaponTypes":["greatsword"]},
+    {"id":"sc_pakilo_cruelty","name":"Pakilo's Cruelty","weaponTypes":["greatsword"]},
+    {"id":"sc_witch_worshipper_temptation","name":"Witch Worshipper's Temptation","weaponTypes":["staff"]},
+    {"id":"sc_talus_glacier","name":"Talus's Glacier","weaponTypes":["staff"]},
+    {"id":"sc_aridus_fury","name":"Aridus's Fury","weaponTypes":["staff"]},
+    {"id":"sc_swift_judgment","name":"Swift Judgment","weaponTypes":["staff"]},
+    {"id":"sc_lightning_spear","name":"Lightning Spear","weaponTypes":["staff"]},
+    {"id":"sc_icebound_gust","name":"Icebound Gust","weaponTypes":["staff"]},
+    {"id":"sc_daigon_fury","name":"Daigon's Fury","weaponTypes":["staff"]},
+    {"id":"sc_witch_worshipper_corrosive_curse","name":"Witch Worshipper's Corrosive Curse","weaponTypes":["spear"]},
+    {"id":"sc_junobote_inferno","name":"Junobote's Inferno","weaponTypes":["spear"]},
+    {"id":"sc_spiral_assault","name":"Spiral Assault","weaponTypes":["spear"]},
+    {"id":"sc_pakilo_naru_barrier","name":"Pakilo Naru's Barrier","weaponTypes":["spear"]},
+    {"id":"sc_wind_blades","name":"Wind Blades","weaponTypes":["spear"]},
+    {"id":"sc_queen_bellandir_hunger","name":"Queen Bellandir's Hunger","weaponTypes":["spear"]},
+    {"id":"sc_ancient_demonic_beast_command","name":"Ancient Demonic Beast's Command","weaponTypes":["global"]},
+    {"id":"sc_talus_transcendent_barrier","name":"Talus's Transcendent Barrier","weaponTypes":["global"]},
+    {"id":"sc_excavators_barrier","name":"Excavator's Barrier","weaponTypes":["global"]},
+    {"id":"sc_silver_reaper_sentence","name":"Silver Reaper's Sentence","weaponTypes":["global"]}
+  ]
+}
