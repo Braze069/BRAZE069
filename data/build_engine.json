@@ -1,0 +1,46 @@
+{
+  "schemaVersion":"1.0.0",
+  "patchTarget":"4.3.0",
+  "engine":"Braze Power Builder Build Composer",
+  "purpose":"Compose builds from database components instead of ranking only predefined build profiles.",
+  "inputs":["weapons","items","item_sets","runes","skill_cores","questlog_catalog","formulas"],
+  "pipeline":[
+    "select_weapon_pair",
+    "collect_compatible_items",
+    "evaluate_trait_synergy",
+    "evaluate_set_thresholds",
+    "evaluate_rune_role",
+    "evaluate_skill_core_coverage",
+    "apply_mode_fit",
+    "apply_goal_fit",
+    "apply_data_confidence",
+    "rank_candidates"
+  ],
+  "constraints":{
+    "no_unknown_numeric_value_as_fact":true,
+    "no_cross_weapon_skill_core":true,
+    "set_thresholds_must_be_satisfied":true,
+    "secondary_unverified_effects_are_not_used_as_verified_numbers":true,
+    "catalog_names_may_generate_candidates":true
+  },
+  "roleWeights":{
+    "burst":{"criticalHitChance":1.0,"heavyAttackChance":1.0,"damage":1.0,"cooldownSpeed":0.7,"hitChance":0.9},
+    "dps":{"damage":1.0,"attackSpeed":0.9,"cooldownSpeed":0.8,"criticalHitChance":0.8,"hitChance":0.9},
+    "survive":{"maxHealth":1.0,"endurance":1.0,"damageReduction":1.0,"evasion":0.8,"shield":0.8},
+    "support":{"healing":1.0,"cooldownSpeed":0.9,"maxMana":0.5,"shield":0.8,"buffDuration":0.8},
+    "overall":{"damage":0.8,"survive":0.7,"support":0.5,"burst":0.7}
+  },
+  "confidenceWeights":{
+    "verified_numeric":1.0,
+    "verified_catalog_only":0.75,
+    "secondary_unverified_numeric":0.0,
+    "unknown":0.0
+  },
+  "initialWeaponPairs":[
+    ["greatsword","spear"],["greatsword","daggers"],["crossbow","daggers"],["longbow","wand"],["staff","longbow"],["gauntlet","wand"],["wand","staff"],["sword","greatsword"]
+  ],
+  "output":{
+    "requiredFields":["weapons","armor","accessories","traits","runes","artifacts","skillCores","score","dataConfidence","reasons"],
+    "showUnknownAs":"Nicht verifiziert"
+  }
+}
