@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "dataset": "item_sets",
+  "dataVersion": "tldb-current-crawl",
+  "patchTarget": "4.3.0",
+  "status": "secondary_reference_pending_patch_verification",
+  "sourceRefs": ["tldb_item_sets"],
+  "sets": [
+    {
+      "id": "set_steel_wall_guardian",
+      "name": "Stahlwallwächter-Set",
+      "effects": {
+        "2": {"maxHealth": 2500},
+        "4": {"meleeEndurance": 200, "rangedEndurance": 200, "heavyAttackDamageResistancePer1000MaxHealth": 0.006, "heavyAttackDamageResistanceCap": 0.24}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_forgotten_monarch",
+      "name": "Vergessener-Monarch-Set",
+      "effects": {
+        "2": {"heavyAttackChancePer10Strength": 30},
+        "4": {"heavyAttackDamage": 0.10, "heavyAttackDamageOnHeavyAttackWindow": 0.10, "heavyAttackWindowSeconds": 3, "maxStacks": 3}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_demonic_beast_hunter",
+      "name": "Dämonenbestien-Jäger-Set",
+      "effects": {
+        "2": {"attackSpeed": 0.07, "skillCooldownSpeed": 0.07},
+        "4": {"bonusDamage": 40, "onHitBonusDamageIncrease": 14, "procChance": 0.15, "durationSeconds": 3, "maxStacks": 4}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_blood_knights",
+      "name": "Blutritter-Set",
+      "effects": {
+        "2": {"criticalHitChance": 250},
+        "4": {"criticalDamage": 0.15, "criticalDamagePerCriticalHit": 0.015, "durationSeconds": 3, "maxStacks": 10}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_lightning_strike",
+      "name": "Blitzschlag-Set",
+      "effects": {
+        "2": {"evasion": 150, "onHitProcChance": 0.20, "evasionProcIncrease": 50, "procDurationSeconds": 2, "maxStacks": 4},
+        "4": {"enemyEnduranceReduction": 150, "radiusMeters": 5, "maxTargets": 6, "movementSkillEvasionIncrease": 600, "movementSkillEvasionDurationSeconds": 1, "cooldownSeconds": 10}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_moonlit_night",
+      "name": "Mondhelle-Nacht-Set",
+      "effects": {
+        "2": {"manaCostEfficiency": 0.08, "maxMana": 2000},
+        "4": {"shieldHealth": 0.30, "shieldHealthReceived": 0.10}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_divine_apostle",
+      "name": "Göttlicher-Apostel-Set",
+      "effects": {
+        "2": {"healing": 0.30},
+        "4": {"passiveSkillHealing": 0.30, "allyShieldBlockPenetrationChance": 0.15, "allyRadiusMeters": 5, "maxAllies": 6}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_crimson_lotus",
+      "name": "Purpurner-Lotus-Set",
+      "effects": {
+        "2": {"damageReduction": 32, "maxHealth": 1600},
+        "4": {"shieldBlockChance": 0.12, "shieldBlockChancePerSkillUse": 0.03, "durationSeconds": 5, "maxStacks": 5, "cooldownPerSkillTypeSeconds": 10}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_secret_order",
+      "name": "Geheimorden-Set",
+      "effects": {
+        "2": {"criticalDamage": 0.14, "heavyAttackDamage": 0.14},
+        "4": {"skillDamageBonus": 80, "skillDamageBonusPerControlSkill": 50, "durationSeconds": 5, "maxStacks": 2}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_noble_wanderer",
+      "name": "Edler-Wanderer-Set",
+      "effects": {
+        "2": {"attackRange": 0.08, "attackSpeed": 0.08},
+        "4": {"skillDamageBonus": 80, "additionalSkillDamageBonusPerMeter": 4, "distanceCapMeters": 30}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_abyss_slayer",
+      "name": "Abgrundschlächter-Set",
+      "effects": {
+        "2": {"maxDamage": 20},
+        "4": {"criticalHitChance": 100, "healthGainFractionOfDamage": 0.05}
+      },
+      "verifiedForTargetPatch": false
+    },
+    {
+      "id": "set_vanguard_leader",
+      "name": "Vorhutführer-Set",
+      "effects": {
+        "2": {"endurancePer10Perception": 45},
+        "4": {"mainWeaponBaseDamageWhenFortitudeAbove": 50, "mainWeaponBaseDamageIncrease": 30}
+      },
+      "verifiedForTargetPatch": false
+    }
+  ]
+}
