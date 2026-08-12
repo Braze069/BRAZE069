@@ -1,0 +1,17 @@
+{
+  "patch":"4.3.0",
+  "items":[
+    {
+      "id":"item_eternal_promise",
+      "name":"Eternal Promise",
+      "slot":"ring",
+      "grade":"Heroic",
+      "itemLevel":0,
+      "stats":{"magicDefense":330,"dexterity":7,"attackSpeedPercent":7},
+      "traits":[],
+      "verified":true,
+      "sourceRefs":["tlcodex_eternal_promise"],
+      "notes":"Basiswerte verifiziert; Trait-Rollwerte werden separat behandelt."
+    }
+  ]
+}
