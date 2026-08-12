@@ -1,0 +1,11 @@
+{
+  "version":"v38",
+  "patch":"4.3.0",
+  "purpose":"Vollständiges Erwerbsquellen-Schema für alle Gegenstandskategorien",
+  "categories":["Waffen","Rüstung","Accessoires","Brooches","Artefakte","Runen","Materialien","sonstige Gegenstände"],
+  "sourceTypes":["Boss-Drop","Dungeon/Raid","Truhe","Auswahltruhe","Belohnung","Herstellung","Händler","Auktionshaus","Event/Vertrag","Quest","Gildenverteilung","Materialtransmutation"],
+  "fields":["deutscherName","interneID","Kategorie","Quelle","Ort","Detail","Dropchance","handelbar","Auktionshaus","Herstellung","Voraussetzungen","Link","status"],
+  "rule":"Nur ausdrücklich verifizierte Angaben dürfen als sichere Erwerbsquelle erscheinen. Unbestätigte Angaben werden als noch nicht verifiziert markiert.",
+  "patchNotes":"4.3.0 erweitert bzw. verändert Beschaffungsquellen für Fähigkeitskerne und Siegelschlüssel, fügt auswählbare Fähigkeitskern-Herstellungsrezepte hinzu und verändert mehrere Herstellungswege.",
+  "officialSource":"https://www.playthroneandliberty.com/de-de/news/articles/update-4-3-0"
+}
