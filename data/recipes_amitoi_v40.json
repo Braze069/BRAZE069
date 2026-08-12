@@ -1,0 +1,10 @@
+{
+  "version":"v40",
+  "patch":"4.3.0",
+  "categories":["Rezepte","Amitoi"],
+  "recipeFields":["Name","Kategorie","Zutaten","Herstellungsort/Händler","Voraussetzungen","Erwerbsweg","Handelbarkeit","Quelle","Status"],
+  "amitoiFields":["Name","Typ","Erwerbsweg","Gebiet/Boss/Event","Amitoi-Expedition","Quelle","Status"],
+  "rules":["Deutsche Anzeigenamen verwenden","Nur bestätigte Erwerbswege als verifiziert markieren","Unbestätigte Wege ausdrücklich kennzeichnen","Rezepte und Amitoi getrennt vom Ausrüstungs-Score behandeln"],
+  "verifiedUpdate43RecipeChanges":["Herstellungsrezepte mit Fähigkeitskernen wurden erneut hinzugefügt","wählbare Fähigkeitskern-Herstellungsrezepte hinzugefügt","Rubrix- und Marind-Resin-Flower-Rezepte hinzugefügt","Edelstein-Herstellungsrezepte erweitert"],
+  "notes":"Amitoi erhalten einen eigenen Detailbereich mit Erwerbsweg und ggf. Amitoi-Expedition. Keine erfundenen Dropquellen."
+}
