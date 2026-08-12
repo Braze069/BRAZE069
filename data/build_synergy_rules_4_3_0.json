@@ -1,0 +1,13 @@
+{
+  "patch":"4.3.0",
+  "verified":true,
+  "source":"Official 4.3.0 rules",
+  "rules":[
+    {"id":"pve_precision_dash","name":"Zweihänder · Precision Dash","condition":"PvE + Precision Dash Spezialisierung 5","effect":"Aufladungsschaden-Erhöhung darf nur im PvE gewertet werden","scoreMode":"conditional"},
+    {"id":"spear_shock","name":"Speer · Schock-Kette","condition":"Blue Flash/Piercing Thunder/Night of Thunderstorms + Schock","effect":"Schock bis 5 Stapel; Detonation und Kernverstärkungen werden als kombinierte Synergie dargestellt","scoreMode":"conditional"},
+    {"id":"dagger_venom","name":"Dolche · Gift-Kern-Synergie","condition":"Foretold Agony + Creeping Death oder Venomous Swamp","effect":"Venomous Edge kann Giftwolke auslösen; qualitative Synergie wird angezeigt","scoreMode":"qualitative"},
+    {"id":"longbow_shield","name":"Langbogen · Decisive Sniping","condition":"Decisive Sniping + Limit Break","effect":"DoT ignoriert Schilde","scoreMode":"qualitative"},
+    {"id":"gauntlet_bloodfest","name":"Panzerhandschuhe · Blutfest","condition":"Blutfest aktiv","effect":"Heroisch Stufe 5: Schaden +20,5%, Klauen-Basisschaden +100%, Bonusschaden +160 und Schadensverringerung -160","scoreMode":"verified_numeric"}
+  ],
+  "note":"Der Optimizer bewertet nur Bedingungen, deren numerischer Effekt eindeutig verifiziert ist. Qualitative Mechaniken werden separat erklärt und nicht künstlich in eine Zahl umgerechnet."
+}
