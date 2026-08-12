@@ -1,0 +1,19 @@
+{
+  "authority":"Questlog trait guide + explicit verification only",
+  "verified":true,
+  "rules":[
+    {"trait":"Heavy Attack Chance","weight":"burst","note":"Weapon/armor/accessory trait; build-dependent value"},
+    {"trait":"Critical Hit Chance","weight":"burst","note":"Weapon/armor/accessory trait; build-dependent value"},
+    {"trait":"Hit Chance","weight":"reliability","note":"Especially relevant against evasion"},
+    {"trait":"Cooldown Speed","weight":"dps","note":"Improves skill uptime"},
+    {"trait":"Attack Speed","weight":"dps","note":"Improves attack cadence"},
+    {"trait":"Max Health","weight":"survive","note":"Defensive trait"},
+    {"trait":"Endurance","weight":"survive","note":"Defensive PvP stat"},
+    {"trait":"Evasion","weight":"survive","note":"Defensive PvP stat"},
+    {"trait":"Skill Damage Boost","weight":"dps","note":"Accessory trait"},
+    {"trait":"Skill Damage Resistance","weight":"survive","note":"Accessory defensive trait"},
+    {"trait":"Buff Duration","weight":"support","note":"Accessory/armor trait"},
+    {"trait":"Debuff Duration","weight":"support","note":"Accessory/armor trait"}
+  ],
+  "policy":"Trait names and categories are verified; numeric contribution is calculated only when an item exposes an explicit numeric trait value. No guessed trait values are added."
+}
