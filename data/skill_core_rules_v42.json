@@ -1,0 +1,13 @@
+{
+  "version":"v42",
+  "patch":"4.3.0",
+  "module":"Fähigkeiten und Fähigkeitskerne",
+  "rules":[
+    {"name":"Fähigkeitskern als Ausrüstungsoption","status":"verifiziert","note":"Frühere Fähigkeitskern-Effekte heroischer Rüstung und Accessoires sind in Ausrüstungsoptionen integriert."},
+    {"name":"Waffenspezifische Fähigkeitskerne","status":"verifiziert","note":"Waffenspezifische Skill-Core-Effekte werden je Waffe erfasst und in der Build-Berechnung berücksichtigt."},
+    {"name":"Rubrix-Resinblume","status":"verifiziert","note":"Ermöglicht die Auswahl waffenspezifischer Fähigkeitskerne; erhaltene Fähigkeitskerne sind nicht handelbar."},
+    {"name":"Marind-Resinblume","status":"verifiziert","note":"Ermöglicht eine eingeschränktere Auswahl waffenspezifischer Fähigkeitskerne; erhaltene Fähigkeitskerne sind nicht handelbar."}
+  ],
+  "optimizerIntegration":["Waffe","Fähigkeit","Spezialisierung","Fähigkeitskern","Ausrüstungsoption","Trait","Resonanz","PvE/PvP"],
+  "source":"https://www.playthroneandliberty.com/de-de/news/articles/update-4-3-0"
+}
