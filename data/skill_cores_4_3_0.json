@@ -1,14 +1,21 @@
 {
-  "patch": "4.3.0",
-  "source": "QuestLog Skill Cores",
-  "verified": true,
-  "weaponCores": [
+  "patch":"4.3.0",
+  "source":"QuestLog + official 4.3.0 patch notes",
+  "verified":true,
+  "weaponCores":[
     {"weapon":"staff","name":"Griai's Thunder","effect":"Stab Lightning skill damage +5%; Lightning skill mana cost -10%"},
     {"weapon":"daggers","name":"Ancient Beast's Strike","effect":"Bloodlust Strike has a 70% chance per hit to deal fixed damage equal to 400% of base damage"},
     {"weapon":"spear","name":"Spiral Assault","effect":"Slashing Blade and Flame Blade damage +20%; adds 4 uses of Spiral Slash"},
-    {"weapon":"wand","name":"Decaying Magic Circle","effect":"Corruption Magic Circle becomes a 5-second area around the caster; damage +25%"},
-    {"weapon":"longbow","name":"Grand Aelon Vitality","effect":"Nature's Blessing grants continuous recovery for 6 seconds; healing doubles in rain"},
-    {"weapon":"crossbow","name":"Akmann's Shard","effect":"Extreme Rapid Fire can launch additional projectiles during Piercing Shot's effect"}
+    {"weapon":"spear","name":"Blue Flash","effect":"Maximale Schock-Ladungen 5; neue Schock-Effekte für Javelin-Fähigkeiten"},
+    {"weapon":"spear","name":"Piercing Thunder","effect":"Javelin Inferno Schaden +10%"},
+    {"weapon":"spear","name":"Night of Thunderstorms","effect":"Explosive Fury Damage-Skill +10%; Elektrokution-Detonation bei 5 Stapeln +30%"},
+    {"weapon":"spear","name":"Hour of Judgment","effect":"PvP Chance auf starken Nahkampfangriff 200"},
+    {"weapon":"wand","name":"Decaying Magic Circle","effect":"Corruption Magic Circle wird zu 5-Sekunden-Bereich; Schaden +25%"},
+    {"weapon":"longbow","name":"Grand Aelon Vitality","effect":"Nature's Blessing kontinuierliche Erholung 6 Sekunden; Heilung bei Regen verdoppelt"},
+    {"weapon":"longbow","name":"Pierce Shot","effect":"DoT ignoriert Schilde"},
+    {"weapon":"crossbow","name":"Akmann's Shard","effect":"Extreme Rapid Fire kann zusätzliche Projektile während Piercing Shot erzeugen"},
+    {"weapon":"sword","name":"Victory Strike","effect":"A Shot at Victory, Annihilation Blade und Earth Strike +5% Schaden"},
+    {"weapon":"sword","name":"Focused Barrage","effect":"Merciless Barrage, Annihilation Barrage Shot und Unrelenting Annihilation +30% Monsterschaden"}
   ],
-  "rule":"Nur verifizierte numerische Effekte dürfen den Charakter-Score verändern. Nicht belegte Effekte werden nur angezeigt."
+  "rules":["Dark Wing's Power und Dark Wing's Bulwark sind ab 4.3.0 Ausrüstungsoptionen und keine separaten Fähigkeitskern-Gegenstände.","Rubrix-Resinblumen erlauben die Auswahl waffenspezifischer Fähigkeitskerne; Marind-Resinblumen erlauben eine engere Auswahl.","Nur verifizierte numerische Effekte dürfen den Charakter-Score verändern; qualitative Effekte werden separat angezeigt."]
 }
