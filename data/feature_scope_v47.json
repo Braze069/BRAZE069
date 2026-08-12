@@ -1,0 +1,10 @@
+{
+  "version":"v47",
+  "patch":"4.3.0",
+  "language":"de",
+  "modules":["Waffen","Rüstung","Accessoires","Traits","Fähigkeiten","Fähigkeitskerne","Waffen-Fähigkeitsverzauberungen","Runen","Artefakte","Rezepte","Materialien","Amitoi","Erwerbsquellen","Charakter-Score","Austausch-und-Neuberechnung"],
+  "scorePolicy":{"onlyVerifiedNumericValues":true,"unknownValues":"excluded","showReasonForChange":true},
+  "acquisitionFields":["Quelle","Ort","Boss","Dungeon","Quest","Händler","Herstellung","Rezept","Auktionshaus","Handelbar","Dropchance","Voraussetzungen","Verifizierungsstatus"],
+  "editorFields":["Waffe 1","Waffe 2","Rüstung","Accessoires","Traits","Fähigkeiten","Fähigkeitskerne","Verzauberungen","Runen","Artefakte","Amitoi"],
+  "buildOutput":["kompletter Charakter","Skillung","Ausrüstung","Alternativ-Builds","Score","Score-Begründung","Erwerbsquellen"]
+}
