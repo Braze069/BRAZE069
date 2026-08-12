@@ -1,0 +1,22 @@
+{
+  "schemaVersion":"1.0.0",
+  "game":"Throne and Liberty",
+  "patch":"4.3.0",
+  "source":"https://www.playthroneandliberty.com/de-de/news/articles/update-4-3-0",
+  "rules":[
+    {"id":"gs_suppressing_strike","weapon":"greatsword","type":"skill_core_balance","skill":"Suppressing Strike","pvpHeavyAttackBonusAtHeroic5":14,"previousPercent":28,"verified":true},
+    {"id":"spear_piercing_thunder","weapon":"spear","type":"skill_core_damage","skill":"Javelin Inferno","damageMultiplier":1.10,"verified":true},
+    {"id":"spear_night_thunderstorms","weapon":"spear","type":"skill_core_damage","skill":"Explosive Fury Damage","damageMultiplier":1.10,"verified":true,"extra":{"electrocutionFiveStackDetonationMultiplier":1.30}},
+    {"id":"spear_blue_flash","weapon":"spear","type":"debuff","skill":"Lightning Javelin / Explosive Lightning Javelin","shockMaxStacks":5,"shockDurationSeconds":6,"shockFiveStackDamage":{"percentBaseDamage":340,"flatDamage":150},"verified":true},
+    {"id":"sword_victory_strike","weapon":"sword","type":"skill_core_damage","skill":"A Shot at Victory / Annihilation Blade / Earth Strike","damageMultiplier":1.05,"verified":true},
+    {"id":"sword_focused_barrage","weapon":"sword","type":"skill_core_damage","skill":"Merciless Barrage / Annihilation Barrage Shot / Unrelenting Annihilation","monsterDamageMultiplier":1.30,"verified":true},
+    {"id":"staff_icebound_tomb","weapon":"staff","type":"specialization","skill":"Icebound Tomb","selfPetrifyFreezeSeconds":1,"verified":true},
+    {"id":"bow_pierce_shot","weapon":"longbow","type":"skill_core","skill":"Pierce Shot","dotIgnoresShields":true,"verified":true},
+    {"id":"orb_redemptive_star","weapon":"orb","type":"skill_core_healing","skill":"Purifying Star","hpRecoveryMultiplier":1.05,"verified":true},
+    {"id":"orb_nebula_pulsation","weapon":"orb","type":"skill_core_healing","skill":"Restoring Constellation","hpRecoveryMultiplier":1.05,"verified":true},
+    {"id":"mastery_bloodlust","weapon":"global","type":"mastery","manaCostPercent":12,"bossHeavyAttackChanceFlat":150,"bossCriticalHitChanceFlat":150,"cooldownSeconds":5,"verified":true},
+    {"id":"item_comet_fists","weapon":"gauntlet","type":"item_damage","skill":"Chaos Witch's Comet Fists","mainWeaponDamage":[128,335],"offHandDamage":[128,335],"verified":true},
+    {"id":"item_frost_lord","weapon":"gauntlet","type":"item_trait","items":["Frost Lord's Black Scale Gloves","Frost Lord's Black Scale Boots"],"changedStat":"PvP Hit Chance","verified":true},
+    {"id":"global_weaken_duration","weapon":"global","type":"stat_cap","stat":"Weaken Duration","minimumReductionPercent":-60,"verified":true}
+  ]
+}
