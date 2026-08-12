@@ -1,17 +1,7 @@
 {
   "patch":"4.3.0",
   "items":[
-    {
-      "id":"item_eternal_promise",
-      "name":"Eternal Promise",
-      "slot":"ring",
-      "grade":"Heroic",
-      "itemLevel":0,
-      "stats":{"magicDefense":330,"dexterity":7,"attackSpeedPercent":7},
-      "traits":[],
-      "verified":true,
-      "sourceRefs":["tlcodex_eternal_promise"],
-      "notes":"Basiswerte verifiziert; Trait-Rollwerte werden separat behandelt."
-    }
+    {"id":"item_eternal_promise","name":"Eternal Promise","slot":"ring","grade":"Heroic","itemLevel":0,"stats":{"magicDefense":330,"dexterity":7,"attackSpeedPercent":7},"traits":[],"verified":true,"sourceRefs":["tlcodex_eternal_promise"],"notes":"Basiswerte verifiziert; Trait-Rollwerte separat."},
+    {"id":"item_choking_conviction","name":"Choking Conviction","slot":"necklace","grade":"Heroic","itemLevel":0,"stats":{"magicDefense":630,"strength":14,"criticalHitChance":210},"traits":["Max Health","Health Regen","Max Mana","Mana Regen","Skill Damage Boost","Buff Duration","Weaken Chance","Stun Chance","Petrification Chance","Sleep Chance","Silence Chance","Fear Chance","Bind Chance","Collision Chance"],"verified":true,"sourceRefs":["tlcodex_choking_conviction"],"notes":"Basiswerte und mögliche Trait-Kategorien verifiziert. Nur Basiswerte fließen automatisch in den Score; Trait-Rolls separat."}
   ]
 }
