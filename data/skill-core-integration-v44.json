@@ -1,0 +1,29 @@
+{
+  "version": "v44",
+  "locale": "de-DE",
+  "source_patch": "4.3.0",
+  "status": "schema-ready",
+  "modules": {
+    "weaponSkillCores": true,
+    "weaponEnchantments": true,
+    "skillSpecializations": true,
+    "equipmentOptions": true,
+    "traits": true,
+    "resonance": true,
+    "recipes": true,
+    "amitoi": true,
+    "acquisitionSources": true,
+    "characterScore": true
+  },
+  "rules": [
+    "Skill-Core-Effekte früherer heroischer Rüstung und Accessoires werden als Ausrüstungsoptionen behandelt.",
+    "Waffenspezifische Fähigkeitskerne werden getrennt von normalen Ausrüstungsoptionen bewertet.",
+    "PvE und PvP werden getrennt bewertet.",
+    "Nicht verifizierte Werte dürfen den Score nicht beeinflussen.",
+    "Beim Austausch einer Komponente wird der Charakter-Score vollständig neu berechnet."
+  ],
+  "acquisition": {
+    "skillCores": ["Raid-Belohnung", "Gegenstandstausch-NPC", "Nyx-Abgrund/Abyss-Punkte", "Gildenverteilung", "Rubrix-Resinblume", "Marind-Resinblume"],
+    "tradeable": "per_item_verification"
+  }
+}
