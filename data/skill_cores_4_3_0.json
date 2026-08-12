@@ -1,0 +1,14 @@
+{
+  "patch": "4.3.0",
+  "source": "QuestLog Skill Cores",
+  "verified": true,
+  "weaponCores": [
+    {"weapon":"staff","name":"Griai's Thunder","effect":"Stab Lightning skill damage +5%; Lightning skill mana cost -10%"},
+    {"weapon":"daggers","name":"Ancient Beast's Strike","effect":"Bloodlust Strike has a 70% chance per hit to deal fixed damage equal to 400% of base damage"},
+    {"weapon":"spear","name":"Spiral Assault","effect":"Slashing Blade and Flame Blade damage +20%; adds 4 uses of Spiral Slash"},
+    {"weapon":"wand","name":"Decaying Magic Circle","effect":"Corruption Magic Circle becomes a 5-second area around the caster; damage +25%"},
+    {"weapon":"longbow","name":"Grand Aelon Vitality","effect":"Nature's Blessing grants continuous recovery for 6 seconds; healing doubles in rain"},
+    {"weapon":"crossbow","name":"Akmann's Shard","effect":"Extreme Rapid Fire can launch additional projectiles during Piercing Shot's effect"}
+  ],
+  "rule":"Nur verifizierte numerische Effekte dürfen den Charakter-Score verändern. Nicht belegte Effekte werden nur angezeigt."
+}
