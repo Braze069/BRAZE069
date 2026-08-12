@@ -1,0 +1,16 @@
+{
+  "version":"v37",
+  "patch":"4.3.0",
+  "language":"de-DE",
+  "appliesTo":["Waffen","Rüstung","Accessoires","Brooches","Artefakte","Runen","Materialien","sonstige Gegenstände"],
+  "fields":["Gegenstand","Kategorie","Erwerbsart","Inhalt/Boss/Händler","Ort","Dropchance","Handelbar","Auktionshaus","Herstellung","Voraussetzungen","Quelle","Status"],
+  "acquisitionTypes":["Boss-Drop","Dungeon","Raid","Gilden-Raid","Weltboss","Truhe","Auswahltruhe","Belohnung","Händler","Herstellung","Event","Vertrag","Auktionshaus","Handel","Sonstiges"],
+  "verificationRule":"Nur konkret belegte Erwerbswege erhalten den Status verifiziert. Unklare oder nur indirekt belegte Wege bleiben noch_nicht_verifiziert.",
+  "specialRules":{
+    "traitExtractVsFullItem":"Trait-Extrakte und der vollständige Gegenstand werden getrennt erfasst.",
+    "auctionHouse":"Ein Nachweis eines Trait-Extrakts beweist nicht, dass der vollständige Gegenstand handelbar ist.",
+    "crafting":"Herstellung wird nur angezeigt, wenn ein passendes Rezept bzw. eine bestätigte Herstellungsquelle vorliegt.",
+    "dropChance":"Dropchancen werden nur angezeigt, wenn sie für genau diesen Gegenstand und diese Quelle bestätigt sind.",
+    "patchAwareness":"Beschaffungswege werden mit dem aktuellen Patchstand abgeglichen. 4.3.0 hat unter anderem Quellen für Fähigkeitskerne und Herstellungsrezepte geändert/erweitert."
+  }
+}
