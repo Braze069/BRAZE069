@@ -1,0 +1,12 @@
+{
+  "version":"v35",
+  "patch":"4.3.0",
+  "rule":"Jeder Gegenstand erhält einen Erwerbsbereich. Nur verifizierte Quellen werden als sichere Quelle angezeigt; fehlende Quellen werden ausdrücklich als noch nicht verifiziert markiert.",
+  "fields":["Typ","Quelle","Detail","Status","Link"],
+  "knownVerified":[
+    {"name":"Barbute des Zorns der Vergessenheit","internalName":"Oblivion's Wrath Barbute","sources":[{"type":"Boss-Drop","detail":"Queen Bellandir – 2% (zufälliger Drop)","status":"verifiziert"},{"type":"Boss-Drop","detail":"Grimturg – 0,42544% (zufälliger Drop)","status":"verifiziert"},{"type":"Boss-Drop","detail":"Exodus – 0,42544% (zufälliger Drop)","status":"verifiziert"},{"type":"Auswahltruhe","detail":"Turka's Precious Equipment Chest – auswählbar","status":"verifiziert"},{"type":"Auswahltruhe","detail":"Lv. 3 Precious Headgear Selection Chest: 2-Star – auswählbar","status":"verifiziert"},{"type":"Belohnung","detail":"Valley of Slaughter Conquest Reward","status":"verifiziert"},{"type":"Truhe","detail":"Nebula Conquest Chest: Armor","status":"verifiziert"},{"type":"Truhe","detail":"Precious Blessing Pouch: Nebula","status":"verifiziert"},{"type":"Herstellung","detail":"Bestätigte Herstellungsrezepte","status":"verifiziert"}],"link":"https://questlog.gg/throne-and-liberty/en/db/item/head_plate_aa_t1_nomal_005"},
+    {"name":"Ewiges Versprechen","internalName":"Eternal Promise","sources":[{"type":"Auktionshaus","detail":"Trait-Extrakte des Gegenstands sind im europäischen Auktionshaus nachweisbar.","status":"verifiziert"}],"status":"teilweise_verifiziert"},
+    {"name":"Erstickende Überzeugung","internalName":"Choking Conviction","sources":[{"type":"Auktionshaus","detail":"Trait-Extrakte des Gegenstands sind im europäischen Auktionshaus nachweisbar.","status":"verifiziert"}],"status":"teilweise_verifiziert"}
+  ],
+  "coverageRule":"Für alle weiteren aktuell erfassten Items wird derselbe Quellenbereich angezeigt und erst nach Quellenprüfung von 'noch nicht verifiziert' auf 'verifiziert' gesetzt. Es werden keine Dropquellen erfunden."
+}
