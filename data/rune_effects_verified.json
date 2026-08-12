@@ -1,0 +1,11 @@
+{
+  "patchTarget":"4.3.0",
+  "authority":"Questlog character-builder pages with explicit displayed rune effects",
+  "entries":[
+    {"id":"staff_wand_example","name":"Staff/Wand Rune Profile","verified":true,"effects":{"skillDamageBoost":42,"manaCostEfficiency":6,"maxMana":720},"synergy":{"dexterity":4,"attackSpeed":3.5},"source":"Questlog Invocator PVE"},
+    {"id":"staff_spear_example","name":"Staff/Spear Rune Profile","verified":true,"effects":{"magicHitChance":30,"skillDamageResistance":30,"magicEvasion":48},"synergy":{"dexterity":4,"attackSpeed":3.5},"source":"Questlog Staff/Spear PvP"},
+    {"id":"crossbow_dagger_example","name":"Crossbow/Dagger Rune Profile","verified":true,"effects":{"rangedHeavyAttackChance":60,"rangedHitChance":60,"bindChance":84},"synergy":{"perception":4,"shieldBlockPenetrationChance":10.5},"source":"Questlog Infiltrator"},
+    {"id":"staff_orb_example","name":"Staff/Orb Rune Profile","verified":true,"effects":{"magicHitChance":40,"skillDamageResistance":34,"meleeEvasion":64},"synergy":{"perception":4,"shieldBlockPenetrationChance":10.5},"source":"Questlog Invocator/Enigma"}
+  ],
+  "policy":"Only displayed, source-backed numeric rune effects are hard-scored. Rune names/profiles without verified numeric effects remain neutral."
+}
