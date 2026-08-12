@@ -1,0 +1,31 @@
+{
+  "schemaVersion":"1.0.0",
+  "game":"Throne and Liberty",
+  "expansion":"The Frozen Divide: Nix",
+  "verifiedSource":"https://www.playthroneandliberty.com/en-us/news/articles/update-4-0-0",
+  "verifiedSystems":{
+    "maxCharacterLevel":60,
+    "statCap":130,
+    "newWeapon":"gauntlets",
+    "gauntletUniqueCountMinimum":20,
+    "weaponMasteryOverallCap":2200,
+    "weaponMasteryPerWeaponCap":220,
+    "armorRunesAdded":true,
+    "potentialSkills":"chance-based equipment skill enhancements or stat boosts; preservable by Sealing and inheritable",
+    "traitSystem":"base traits removed from gear drops; traits unlocked with Trait Unlockstones and enhanced with Trait Enhancement Stones",
+    "traitResonance":"four growth stages with four resonance slots, rollable up to 10 each",
+    "sealSystem":"sealed equipment cannot be equipped until unsealed; unsealing makes it untradeable"
+  },
+  "statMilestones":{
+    "strength":{"100":{"maxHealth":600,"damageReduction":18},"120":{"maxHealth":600,"heavyAttackDamagePercent":5}},
+    "dexterity":{"100":{"criticalHitChance":60,"attackSpeedPercent":4},"120":{"criticalHitChance":60,"criticalDamagePercent":4}},
+    "wisdom":{"100":{"maxMana":600,"manaCostEfficiencyPercent":3},"120":{"maxMana":600,"maxDamage":10}},
+    "perception":{"100":{"hitChance":60,"rangePercent":5},"120":{"hitChance":60,"ccChance":100}},
+    "fortitude":{"100":{"endurance":60,"criticalDamageResistancePercent":4},"120":{"endurance":60,"heavyAttackDamageResistancePercent":5}}
+  },
+  "masteries":{
+    "bloodlust":{"level":1560,"manaCostPercentPerSecond":4,"bossHeavyAttackHitPerStack":50,"bossCriticalHitPerStack":50,"maxStacks":3,"intervalSeconds":5},
+    "piercingSpear":{"level":1560,"hitsRequired":10,"baseDamagePercent":600,"cooldownSeconds":12,"ignoresBlockChance":true}
+  },
+  "dataPolicy":"Only verified values are used in calculations; missing item-specific Nix values remain unscored."
+}
