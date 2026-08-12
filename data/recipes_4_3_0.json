@@ -1,0 +1,8 @@
+{
+  "patch":"4.3.0",
+  "source":"QuestLog Recipes",
+  "recipes":[
+    {"name":"Skill-Core-Extraktionsschriftrolle","gold":1000000,"ingredients":["5 Kostbares Marind-Erz","25 Extraktionsstein","2 Abenteuer-Münze: Tapferkeit"],"verified":true},
+    {"name":"Bercant's Steelstring Bow","gold":218180,"materials":"QuestLog-Rezept vorhanden","verified":true}
+  ]
+}
