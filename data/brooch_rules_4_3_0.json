@@ -1,0 +1,8 @@
+{
+  "patch":"4.3.0",
+  "rules":[
+    {"id":"brooch_slot_enabled","verified":true,"effect":"Brooch is a dedicated equipment slot."},
+    {"id":"brooch_no_runes","verified":true,"effect":"Brooches cannot have runes attached."},
+    {"id":"noble_birthright_brooch","verified":true,"itemId":"item_noble_birthright_brooch","pvePvp":"PvE/PvP item classification is kept separate unless individually verified."}
+  ]
+}
