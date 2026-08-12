@@ -1,53 +1,9 @@
 {
-  "patch": "4.3.0",
-  "items": [
-    {
-      "id":"item_chaos_witch_comet_fists",
-      "name":"Chaos Witch's Comet Fists",
-      "type":"weapon",
-      "weaponType":"gauntlet",
-      "grade":"Heroic",
-      "itemLevel":60,
-      "stats":{"mainWeaponDamageMin":128,"mainWeaponDamageMax":335,"offHandDamageMin":128,"offHandDamageMax":335},
-      "traits":[],
-      "skillCores":[],
-      "setId":null,
-      "patch":"4.3.0",
-      "sourceRefs":["official_update_4_3_0"],
-      "verified":true,
-      "notes":"Offizielle 4.3.0-Patchnotes ändern Haupt- und Nebenhand-Schaden von 195–268 auf 128–335. Itemname/Typ aus der strukturierten Datenbank referenzierbar. Weitere Itemwerte werden erst nach Verifikation ergänzt."
-    },
-    {
-      "id":"item_frost_lord_black_scale_gloves",
-      "name":"Frost Lord's Black Scale Gloves",
-      "type":"armor",
-      "weaponType":null,
-      "grade":"Heroic",
-      "itemLevel":null,
-      "stats":{"pvpHitChance":true},
-      "traits":[],
-      "skillCores":[],
-      "setId":null,
-      "patch":"4.3.0",
-      "sourceRefs":["official_update_4_3_0"],
-      "verified":true,
-      "notes":"Patchnotes bestätigen die Umstellung von Hit Chance auf PvP Hit Chance. Exakte numerische Itemwerte werden erst nach Verifikation ergänzt."
-    },
-    {
-      "id":"item_frost_lord_black_scale_boots",
-      "name":"Frost Lord's Black Scale Boots",
-      "type":"armor",
-      "weaponType":null,
-      "grade":"Heroic",
-      "itemLevel":null,
-      "stats":{"pvpHitChance":true},
-      "traits":[],
-      "skillCores":[],
-      "setId":null,
-      "patch":"4.3.0",
-      "sourceRefs":["official_update_4_3_0"],
-      "verified":true,
-      "notes":"Patchnotes bestätigen die Umstellung von Hit Chance auf PvP Hit Chance. Exakte numerische Itemwerte werden erst nach Verifikation ergänzt."
-    }
+  "patch":"4.3.0",
+  "items":[
+    {"id":"item_chaos_witch_comet_fists","name":"Chaos Witch's Comet Fists","type":"weapon","weaponType":"gauntlet","grade":"Heroic","itemLevel":60,"stats":{"mainWeaponDamageMin":128,"mainWeaponDamageMax":335,"offHandDamageMin":128,"offHandDamageMax":335},"traits":[],"skillCores":[],"setId":null,"patch":"4.3.0","sourceRefs":["official_update_4_3_0"],"verified":true,"notes":"4.3.0 bestätigt 128–335 Haupt- und Nebenhand-Schaden."},
+    {"id":"item_frost_lord_black_scale_gloves","name":"Frost Lord's Black Scale Gloves","type":"armor","slot":"gloves","weaponType":null,"grade":"Heroic","itemLevel":null,"stats":{"pvpHitChance":true},"traits":[],"skillCores":[],"setId":null,"patch":"4.3.0","sourceRefs":["official_update_4_3_0"],"verified":true,"notes":"4.3.0 bestätigt Umstellung auf PvP Hit Chance; exakter Zahlenwert nicht verifiziert."},
+    {"id":"item_frost_lord_black_scale_boots","name":"Frost Lord's Black Scale Boots","type":"armor","slot":"boots","weaponType":null,"grade":"Heroic","itemLevel":null,"stats":{"pvpHitChance":true},"traits":[],"skillCores":[],"setId":null,"patch":"4.3.0","sourceRefs":["official_update_4_3_0"],"verified":true,"notes":"4.3.0 bestätigt Umstellung auf PvP Hit Chance; exakter Zahlenwert nicht verifiziert."},
+    {"id":"item_hex_ingenuity_greaves","name":"Hex of Ingenuity Greaves","type":"armor","slot":"pants","weaponType":null,"grade":"Heroic","itemLevel":51,"stats":{"maxStamina":13},"traits":[],"skillCores":[],"setId":null,"patch":"4.3.0","sourceRefs":["official_update_4_3_0"],"verified":true,"notes":"4.3.0 korrigiert Max Stamina bei Item-Level 51 auf 13."}
   ]
 }
