@@ -1,0 +1,38 @@
+{
+  "version":"v36",
+  "patch":"4.3.0",
+  "language":"de-DE",
+  "rule":"Jeder aktuell erfasste Gegenstand besitzt dieselben Erwerbsfelder. Nur einzeln verifizierte Quellen werden als sicher angezeigt.",
+  "fields":["Typ","Quelle","Detail","Dropchance","Handelbar","Status","Link"],
+  "sourceTypes":["Boss-Drop","Dungeon","Raid","Weltboss","Truhe","Auswahltruhe","Belohnung","Herstellung","Auktionshaus","Event","Vertrag","Händler","Gildenverteilung","Dimensionsprüfung"],
+  "statusValues":["verifiziert","teilweise_verifiziert","noch_nicht_verifiziert"],
+  "knownVerified":[
+    {
+      "name":"Barbute des Zorns der Vergessenheit",
+      "internalName":"Oblivion's Wrath Barbute",
+      "sources":[
+        {"type":"Boss-Drop","detail":"Queen Bellandir – 2% (zufälliger Drop)","dropChance":"2%","tradeable":false,"status":"verifiziert"},
+        {"type":"Boss-Drop","detail":"Grimturg – 0,42544% (zufälliger Drop)","dropChance":"0,42544%","tradeable":false,"status":"verifiziert"},
+        {"type":"Boss-Drop","detail":"Exodus – 0,42544% (zufälliger Drop)","dropChance":"0,42544%","tradeable":false,"status":"verifiziert"},
+        {"type":"Auswahltruhe","detail":"Turka's Precious Equipment Chest – auswählbar","tradeable":false,"status":"verifiziert"},
+        {"type":"Auswahltruhe","detail":"Lv. 3 Precious Headgear Selection Chest: 2-Star – auswählbar","tradeable":false,"status":"verifiziert"},
+        {"type":"Belohnung","detail":"Valley of Slaughter Conquest Reward","tradeable":false,"status":"verifiziert"},
+        {"type":"Truhe","detail":"Nebula Conquest Chest: Armor","tradeable":false,"status":"verifiziert"},
+        {"type":"Truhe","detail":"Precious Blessing Pouch: Nebula","tradeable":false,"status":"verifiziert"},
+        {"type":"Herstellung","detail":"Bestätigte Herstellungsrezepte","tradeable":false,"status":"verifiziert"}
+      ],
+      "link":"https://questlog.gg/throne-and-liberty/en/db/item/head_plate_aa_t1_nomal_005"
+    },
+    {
+      "name":"Ewiges Versprechen",
+      "internalName":"Eternal Promise",
+      "sources":[{"type":"Auktionshaus","detail":"Trait-Extrakte sind im europäischen Auktionshaus nachweisbar; vollständiger Ring-Erwerbsweg noch nicht bestätigt.","tradeable":true,"status":"teilweise_verifiziert"}]
+    },
+    {
+      "name":"Erstickende Überzeugung",
+      "internalName":"Choking Conviction",
+      "sources":[{"type":"Auktionshaus","detail":"Trait-Extrakte sind im europäischen Auktionshaus nachweisbar; vollständiger Halsband-Erwerbsweg noch nicht bestätigt.","tradeable":true,"status":"teilweise_verifiziert"}]
+    }
+  ],
+  "coverageRule":"Alle weiteren Items werden automatisch mit dem vollständigen Erwerbsdatensatz geführt. Bis zur Einzelprüfung stehen unbekannte Quellen auf 'noch nicht verifiziert' und fließen nicht als bestätigte Beschaffung in Empfehlungen ein."
+}
