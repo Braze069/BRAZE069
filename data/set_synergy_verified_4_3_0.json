@@ -1,0 +1,14 @@
+{
+  "patchTarget":"4.3.0",
+  "source":"QuestLog item pages verified 2026-08-12",
+  "sets":[
+    {"setId":"blizzard_overture","name":"Blizzard Overture Set","pieces":[2,4],"bonuses":[{"pieces":2,"verified":true,"effects":{"meleeDamageBoostPercent":3,"meleeEndurance":100,"rangedEndurance":100,"magicEndurance":100,"meleeHeavyAttackEvasion":100,"rangedHeavyAttackEvasion":100,"magicHeavyAttackEvasion":100},"description":"+3% Melee Damage Boost; +100 Melee/Ranged/Magic Endurance; +100 Heavy Attack Evasion."},{"pieces":4,"verified":true,"effects":{"skillCooldownSpeedPercent":10},"description":"+10% Skill Cooldown Speed. Additional mobility-skill trigger is conditional and is not permanently scored."}]},
+    {"setId":"punishers_wings","name":"Punisher's Wings Set","pieces":[2,4],"bonuses":[{"pieces":2,"verified":true,"effects":{"skillDamageBoost":50,"heavyAttackChance":150},"description":"+50 Skill Damage Boost; +150 Heavy Attack Chance."},{"pieces":4,"verified":true,"effects":{"heavyAttackDamagePercent":20},"description":"+20% Heavy Attack Damage; additional +20% for 3s has a 20% trigger chance and is not permanently scored."}]},
+    {"setId":"dawn_of_black_lament_2","name":"Dawn of Black Lament Set 2","pieces":[2],"bonuses":[{"pieces":2,"verified":true,"effects":{"heavyAttackEvasion":200,"evasion":250},"description":"+200 Magic/Melee/Ranged Heavy Attack Evasion; +250 Magic/Melee/Ranged Evasion."}]}
+  ],
+  "itemSetMappings":[
+    {"match":"Blizzard Overture","setId":"blizzard_overture"},
+    {"match":"Punisher's Wings","setId":"punishers_wings"},
+    {"match":"Dawn of Black Lament","setId":"dawn_of_black_lament_2"}
+  ]
+}
