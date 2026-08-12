@@ -1,0 +1,42 @@
+{
+  "version":"v34",
+  "patch":"4.3.0",
+  "rule":"Nur verifizierte Quellen werden als sichere Erwerbsquelle angezeigt.",
+  "items":[
+    {
+      "name":"Ewiges Versprechen",
+      "internalName":"Eternal Promise",
+      "status":"teilweise_verifiziert",
+      "sources":[
+        {"type":"Auktionshaus","detail":"Trait-Extrakte des Gegenstands werden im europäischen Auktionshaus geführt.","verified":true,"url":"https://questlog.gg/throne-and-liberty/en/auction-house/item/ring_aa_t2_raid_001_TraitExtract"}
+      ],
+      "notes":"Der direkte Erwerbsweg des vollständigen Rings ist noch nicht sicher verifiziert; deshalb nicht als direkte Dropquelle behaupten."
+    },
+    {
+      "name":"Erstickende Überzeugung",
+      "internalName":"Choking Conviction",
+      "status":"teilweise_verifiziert",
+      "sources":[
+        {"type":"Auktionshaus","detail":"Trait-Extrakte des Gegenstands werden im europäischen Auktionshaus geführt.","verified":true,"url":"https://questlog.gg/throne-and-liberty/en-nc/auction-house/item/necklace_aa_t2_raid_001_TraitExtract"}
+      ],
+      "notes":"Der direkte Erwerbsweg des vollständigen Halsbands ist noch nicht sicher verifiziert."
+    },
+    {
+      "name":"Barbute des Zorns der Vergessenheit",
+      "internalName":"Oblivion's Wrath Barbute",
+      "status":"verifiziert",
+      "sources":[
+        {"type":"Boss-Drop","detail":"Queen Bellandir – 2% (zufälliger Drop)","verified":true},
+        {"type":"Boss-Drop","detail":"Grimturg – 0,42544% (zufälliger Drop)","verified":true},
+        {"type":"Boss-Drop","detail":"Exodus – 0,42544% (zufälliger Drop)","verified":true},
+        {"type":"Auswahltruhe","detail":"Turka's Precious Equipment Chest – auswählbar", "verified":true},
+        {"type":"Auswahltruhe","detail":"Lv. 3 Precious Headgear Selection Chest: 2-Star – auswählbar", "verified":true},
+        {"type":"Belohnung","detail":"Valley of Slaughter Conquest Reward", "verified":true},
+        {"type":"Truhe","detail":"Nebula Conquest Chest: Armor", "verified":true},
+        {"type":"Truhe","detail":"Precious Blessing Pouch: Nebula", "verified":true},
+        {"type":"Herstellung","detail":"2 bestätigte Herstellungsrezepte in der Datenbank", "verified":true}
+      ],
+      "url":"https://questlog.gg/throne-and-liberty/en/db/item/head_plate_aa_t1_nomal_005"
+    }
+  ]
+}
