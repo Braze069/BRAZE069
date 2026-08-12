@@ -1,0 +1,19 @@
+{
+  "version": "v33",
+  "language": "de-DE",
+  "items": {
+    "Eternal Promise": "Ewiges Versprechen",
+    "Choking Conviction": "Erstickende Überzeugung",
+    "Shackled Twilight": "Angekettetes Zwielicht",
+    "Binding Treachery": "Fesselnder Verrat",
+    "Noble Birthright Brooch": "Brooch des edlen Geburtsrechts",
+    "Chaos Witch's Comet Fists": "Kometenfäuste der Chaoshexe",
+    "Titanspine Longbow": "Langbogen des Titanendorns",
+    "Arc of Lunar Radiance": "Bogen des Mondglanzes",
+    "Bercant's Steelstring Bow": "Bercants Stahlbogen",
+    "Deluzhnoa's Arc of Frozen Death": "Deluzhnoas Bogen des gefrorenen Todes",
+    "Oblivion's Wrath Barbute": "Barbute des Zorns der Vergessenheit",
+    "Kingslayer's Banded Platemail": "Plattenrüstung des Königstöters"
+  },
+  "rule": "Interne IDs bleiben unverändert; die Benutzeroberfläche verwendet deutsche Anzeigenamen."
+}
