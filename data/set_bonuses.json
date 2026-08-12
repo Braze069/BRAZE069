@@ -1,0 +1,11 @@
+{
+  "patchTarget":"current-catalog",
+  "source":"Questlog.gg item pages",
+  "verified":true,
+  "sets":[
+    {"setId":"blizzard_overture","name":"Blizzard Overture Set","items":["Blizzard Overture Armor"],"bonuses":[{"pieces":2,"verified":true,"description":"Magic, Melee, and Ranged Endurance +100; Magic, Melee, and Ranged Heavy Attack Evasion +100; Melee Damage Boost +3%","stats":{"meleeDamageBoostPercent":3,"endurance":100,"heavyAttackEvasion":100}},{"pieces":4,"verified":true,"description":"Skill Cooldown Speed +10%; after a mobility skill, Attack Speed +10% and Heavy Attack Damage +14% for 3s","stats":{"cooldownSpeedPercent":10,"attackSpeedPercent":10,"heavyAttackDamagePercent":14,"conditionalDurationSeconds":3}}]},
+    {"setId":"punishers_wings","name":"Punisher's Wings Set","items":["Punisher's Wings Gloves"],"bonuses":[{"pieces":2,"verified":true,"description":"Skill Damage Boost +50; Magic, Melee, and Ranged Heavy Attack Chance +150","stats":{"skillDamageBoost":50,"heavyAttackChance":150}},{"pieces":4,"verified":true,"description":"Heavy Attack Damage +20%; on Heavy Attack hit, 20% chance to increase Heavy Attack Damage by 20% for 3s","stats":{"heavyAttackDamagePercent":20,"conditionalHeavyAttackDamagePercent":20,"conditionalChancePercent":20,"conditionalDurationSeconds":3}}]},
+    {"setId":"dawn_black_lament","name":"Dawn of Black Lament Set 2","items":["Dawn of Black Lament Light Armor"],"bonuses":[{"pieces":2,"verified":true,"description":"Magic, Melee, and Ranged Heavy Attack Evasion +200; Magic, Melee, and Ranged Evasion +250","stats":{"heavyAttackEvasion":200,"evasion":250}}]}
+  ],
+  "policy":"Only bonuses explicitly listed on the cited Questlog item page are eligible for hard scoring. A set activates only when the selected items are mapped to that set; catalog-only names are not enough."
+}
