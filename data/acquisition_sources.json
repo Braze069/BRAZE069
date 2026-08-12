@@ -1,0 +1,17 @@
+{
+  "version":"1.0.0",
+  "patch":"4.3.0",
+  "items":{
+    "item_titanspine_longbow":{"sources":[{"type":"Datenbank","name":"QuestLog – Titanspine Longbow","verified":true,"url":"https://questlog.gg/throne-and-liberty/en/db/items/weapons"}]},
+    "item_arc_lunar_radiance":{"sources":[{"type":"Datenbank","name":"QuestLog – Arc of Lunar Radiance","verified":true,"url":"https://questlog.gg/throne-and-liberty/en/db/items/weapons"}]},
+    "item_bercants_steelstring_bow":{"sources":[{"type":"Auswahltruhe","name":"Precious Epic II Weapon Selection Chest: Emergency","verified":true},{"type":"Auswahltruhe","name":"Precious Epic II Weapon Selection Chest: Fortune's Calling","verified":true},{"type":"Belohnung","name":"Halls of Tragedy Conquest Reward","verified":true},{"type":"Truhe","name":"Halls of Tragedy Equipment Chest","verified":true},{"type":"Herstellung","name":"Bercant's Steelstring Bow","verified":true,"url":"https://questlog.gg/throne-and-liberty/en/db/item/bow_aa_t5_boss_003"}]},
+    "item_deluzhnoa_arc_frozen_death":{"sources":[{"type":"Datenbank","name":"QuestLog – Deluzhnoa's Arc of Frozen Death","verified":true,"url":"https://questlog.gg/throne-and-liberty/en/db/items/weapons"}]},
+    "item_eternal_promise":{"sources":[{"type":"Datenbank","name":"TL Codex – Eternal Promise","verified":true}]}
+  },
+  "recipes":[
+    {"id":"recipe_skill_core_extraction_scroll","name":"Skill-Core-Extraktionsschriftrolle","verified":true,"gold":1000000,"ingredients":[{"name":"5× Kostbares Marind-Erz","qty":5},{"name":"25× Extraktionsstein","qty":25},{"name":"2× Abenteuer-Münze: Tapferkeit","qty":2}],"url":"https://questlog.gg/throne-and-liberty/en/db/recipe/Extract_Perk_Scroll_kAAA_armor"}
+  ],
+  "amitoi":{"catalogUrl":"https://questlog.gg/throne-and-liberty/en/db/amitoi","verifiedCatalog":true},
+  "skillEnhancements":{"catalogUrl":"https://questlog.gg/throne-and-liberty/en/db/skill-traits/staff","verifiedCatalog":true},
+  "skillCores":{"catalogUrl":"https://questlog.gg/throne-and-liberty/ko-nc/skill-cores","verifiedCatalog":true}
+}
