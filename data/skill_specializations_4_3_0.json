@@ -1,0 +1,16 @@
+{
+  "patch":"4.3.0",
+  "verified":true,
+  "source":"Official Throne and Liberty 4.3.0 patch notes",
+  "specializations":[
+    {"weapon":"greatsword","skill":"Precision Dash","specialization":"Erhöhter Aufladungsschaden","level":5,"effect":"Schadenssteigerung gilt jetzt nur im PvE","pveOnly":true},
+    {"weapon":"greatsword","skill":"Death Blow","specialization":"Abklingzeitverringerung","level":2,"effect":"Nur bei aktiver Spezialisierung wirksam"},
+    {"weapon":"greatsword","skill":"Suppressing Strike","specialization":"Starker Angriff bei Kontrolle","level":5,"effect":"Starker Angriffsschaden bei Betäubung/Fesselung/Kollision reduziert auf 14%"},
+    {"weapon":"spear","skill":"Rising Slash","specialization":"Slaughtering Slash","level":4,"effect":"Letzter Treffer kann eigene Schwächung: Schock-Stapel verbrauchen und detonieren"},
+    {"weapon":"staff","skill":"Icebound Tomb","specialization":"Icebound Armor","level":1,"effect":"Selbstversteinerung: Einfrieren dauert 1 Sekunde"},
+    {"weapon":"daggers","skill":"Inject Venom","specialization":"Lightning Infusion","level":1,"effect":"Zusatzverwendung verbraucht keine Gift-Stapel; kein zusätzlicher starker Angriffsschaden"},
+    {"weapon":"longbow","skill":"Decisive Sniping","specialization":"Decisive Bombardment","level":5,"effect":"Schadenstiming an Projektiltreffer angepasst"},
+    {"weapon":"orb","skill":"Summon Constellation","specialization":"Milky Way","level":1,"effect":"Fehlerhafte Abklingzeit-Interaktion mit Armbrust-Selfless-Diffusion behoben"},
+    {"weapon":"gauntlets","skill":"Bloodstorm","specialization":"Kettenfähigkeit","level":4,"effect":"Zielanzahl der Blutklaue-Kettenfähigkeit korrigiert"}
+  ]
+}
