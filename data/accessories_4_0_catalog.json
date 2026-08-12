@@ -1,0 +1,14 @@
+{
+  "patch":"4.3.0",
+  "policy":"Catalog entries are selectable candidates; only entries with individually verified numeric stats may affect the score.",
+  "officialRule":"Update 4.0 added 6 new accessories and 12 new rings; no new brooches were added.",
+  "items":[
+    {"id":"acc_ewiges_versprechen","name":"Ewiges Versprechen","slot":"ring","verified":false,"source":"tldb_catalog"},
+    {"id":"acc_ring_profane_hexenzirkels","name":"Ring des profanen Hexenzirkels","slot":"ring","verified":false,"source":"tldb_catalog"},
+    {"id":"acc_ring_silbernen_boten","name":"Ring des silbernen Boten","slot":"ring","verified":false,"source":"tldb_catalog"},
+    {"id":"acc_erstickende_ueberzeugung","name":"Erstickende Überzeugung","slot":"necklace","verified":false,"source":"tldb_catalog"},
+    {"id":"acc_gekettetes_zwielicht","name":"Angekettetes Zwielicht","slot":"bracelet","verified":false,"source":"tldb_catalog"},
+    {"id":"acc_fesselnder_verrat","name":"Fesselnder Verrat","slot":"belt","verified":false,"source":"tldb_catalog"},
+    {"id":"acc_ohrringe_verdorbenes_stellarit","name":"Ohrringe aus verdorbenem Stellarit","slot":"earring","verified":false,"source":"tldb_catalog"}
+  ]
+}
