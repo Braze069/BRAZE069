@@ -1,0 +1,27 @@
+{
+  "schemaVersion":"1.0.0",
+  "targetPatch":"4.3.0",
+  "verificationDate":"2026-08-12",
+  "sources":[
+    {"type":"official","name":"Throne and Liberty Update 4.3.0","url":"https://www.playthroneandliberty.com/de-de/news/articles/update-4-3-0","use":"patch context"},
+    {"type":"questlog","name":"Questlog Skill Cores","url":"https://questlog.gg/throne-and-liberty/en/skill-cores","use":"skill-core effects"},
+    {"type":"questlog","name":"Questlog Skill Sets","url":"https://questlog.gg/throne-and-liberty/en/db/skill-sets","use":"skill catalog"}
+  ],
+  "rules":[
+    {"id":"stat_crit_max_damage","scope":"global","verified":true,"effect":"Critical hits reach Max Base Damage; they are not treated as a generic damage multiplier.","source":"https://questlog.gg/throne-and-liberty/ko-nc/guides/intro-to-stat-points"},
+    {"id":"skillcore_pakilo_barrage","scope":"greatsword","verified":true,"effect":"Pakilo's Cruelty: Brave Barrage and Ferocious Barrage damage +15%; cooldown reduction effect +50%.","source":"https://questlog.gg/throne-and-liberty/en/skill-cores"},
+    {"id":"skillcore_akman_fragment","scope":"crossbow","verified":true,"effect":"Akman's Fragment: during Infiltration, Rapid Fire Barrage hits launch an additional projectile dealing 120% Base Damage, with limited transfer behavior.","source":"https://questlog.gg/throne-and-liberty/en/skill-cores"},
+    {"id":"skillcore_nightmarish_circle","scope":"wand","verified":true,"effect":"Nightmarish Magic Circle changes Corrupted Magic Circle to a 5m area lasting 5s; curse damage +25%.","source":"https://questlog.gg/throne-and-liberty/en/db/item/Perk_wand_a_t2_nomal_001"},
+    {"id":"skillcore_tevent_hunger","scope":"wand","verified":true,"effect":"Enraged Tevent's Hunger: applying wand curse has a 15% chance to apply a 30s weaken effect dealing 35% Base Damage per second and reducing defense by 10%; monster damage is increased.","source":"https://questlog.gg/throne-and-liberty/en/skill-cores"},
+    {"id":"skillcore_deluzhnoa_hail","scope":"staff","verified":true,"effect":"Aridus's Fury: standing still for 3s increases Base Damage by 12%; moving removes the effect after the stated delay.","source":"https://questlog.gg/throne-and-liberty/en/skill-cores"},
+    {"id":"skillcore_grayeye_thunder","scope":"staff","verified":true,"effect":"Grayeye's Thunder: Lightning skills damage +5% and mana cost -10%.","source":"https://questlog.gg/throne-and-liberty/en/skill-cores"},
+    {"id":"skillcore_tevent_bombardment","scope":"longbow","verified":true,"effect":"Enraged Tevent's Bombardment: each Barrage Bombardment attack can trigger an extra projectile dealing 82% Base Damage.","source":"https://questlog.gg/throne-and-liberty/en/skill-cores"},
+    {"id":"skillcore_levirathan_spirit","scope":"daggers","verified":true,"effect":"Leviathan's Spirit: Thunder Spirit and Blackwind Spirit damage +20%; melee critical hits extend duration by 0.2s within the stated cap.","source":"https://questlog.gg/throne-and-liberty/en/skill-cores"}
+  ],
+  "simulationPolicy":{
+    "hardVerifiedEffects":true,
+    "genericEstimatedMultipliers":false,
+    "unknownSkillMultipliers":"excluded_from_exact_damage",
+    "criticalHitModel":"max_base_damage_not_generic_multiplier"
+  }
+}
